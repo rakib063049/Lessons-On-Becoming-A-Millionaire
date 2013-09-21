@@ -5,7 +5,7 @@ development:
   database: millionaire_development
   pool: 5
   username: root
-  password: root
+  password: t
 
 test:
   adapter: mysql2
@@ -14,7 +14,7 @@ test:
   database: millionaire_test
   pool: 5
   username: root
-  password: root
+  password: t
 
 production:
   adapter: mysql2
@@ -23,5 +23,5 @@ production:
   database: millionaire_production
   pool: 5
   username: root
-  password: root
+  password: t
   socket: /var/run/mysqld/mysqld.sock
