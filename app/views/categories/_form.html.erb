@@ -1,0 +1,12 @@
+<%= semantic_form_for [:admin, @category] do |f| %>
+    <%= f.inputs do %>
+        <%= f.input :title, :wrapper_html => {:style => 'width: 56%'} %>
+        <%= f.input :sub_title, :wrapper_html => {:style => 'width: 56%'} %>
+        <%= f.input :summary, :wrapper_html => {:style => 'width: 56%'} %>
+    <% end %>
+
+    <%= f.actions do %>
+        <li class="cancel"><%= link_to 'Cancel', :back %></li>
+        <%= f.action :submit %>
+    <% end %>
+<% end %>
