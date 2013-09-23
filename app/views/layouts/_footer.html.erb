@@ -12,7 +12,7 @@
           </ul>
         </div>
         <div class="footer-menu">
-          <h2 class="footer-title-menu">Why Join?</h2>
+          <h2 class="footer-title-menu">Affiliates</h2>
           <ul>
             <li><a href="#">About Service</a></li>
             <li><a href="#">Testmonial</a></li>
@@ -21,7 +21,7 @@
           </ul>
         </div>
         <div class="footer-menu">
-          <h2 class="footer-title-menu">Why Join?</h2>
+          <h2 class="footer-title-menu">Events</h2>
           <ul>
             <li><a href="#">About Service</a></li>
             <li><a href="#">Testmonial</a></li>
@@ -30,7 +30,7 @@
           </ul>
         </div>
         <div class="footer-menu">
-          <h2 class="footer-title-menu">Why Join?</h2>
+          <h2 class="footer-title-menu">Features</h2>
           <ul>
             <li><a href="#">About Service</a></li>
             <li><a href="#">Testmonial</a></li>
@@ -39,8 +39,17 @@
           </ul>
         </div>
         <div class="footer-menu">
-          <img class="footer-menu-logo" src="/assets/footer-logo.png" alt="footer logo" />
+          <h2 class="footer-title-menu">Supports</h2>
+          <ul>
+            <li><a href="#">About Service</a></li>
+            <li><a href="#">Testmonial</a></li>
+            <li><a href="#">Sign Up free</a></li>
+            <li><a href="#">Sign Up free</a></li>
+          </ul>
         </div>
+
+
+        <img class="footer-menu-logo" src="/assets/footer-logo.png" alt="footer logo" />
       </div>
     </div>
   </div>
@@ -114,8 +123,10 @@
       <div class="footer left">
         <div class="footer-last-menu">
           <ul>
-            <li><a href="#">About Service</a></li>
-            <li><a href="#">Testmonial</a></li>
+            <li><%= link_to 'site-map', page_path(id: 'site_map') %></li>
+            <li><%= link_to 'privacy-policy', page_path(id: 'privacy_policy') %></li>
+            <li><%= link_to 'terms-and-condition', page_path(id: 'terms_and_condition') %></li>
+            <li><%= link_to 'contact-us', page_path(id: 'contact_us') %></li>
             <li><a href="#">Sign Up free</a></li>
             <li><a href="#">Sign Up free</a></li>
           </ul>

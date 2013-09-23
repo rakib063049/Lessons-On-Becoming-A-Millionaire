@@ -1,18 +1,90 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-/*
 
-.product-summury {
-  margin: 0 auto;
-  width: 756px;
-  .first-paragraph{
-    font-size: 35px;
-    margin-left: 10px;
-  }
-  .second-paragraph {
-    font-size: 40px;
-  }
 
+.text_h2{
+	float:left;
+	width:680px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:30px;
+	text-align:center;
+	line-height:30px;
+	margin:24px 0 24px 145px;
+	}
+
+.text_h5{
+	float:left;
+	width:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:24px;
+	text-align:center;
+	line-height:30px;
+	margin:40px 0 30px 0px;
+	}
+
+.text_p{
+	float:left;
+	width:786px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:13px;
+	text-align:center;
+	line-height:18px;
+	color:#232323;
+	margin:0px 0px 0px 94px;
+	}
+
+.video_share{
+	float:left;
+	width:100%;
+	margin-top:10px;
+	}
+.text_share{
+	float:left;
+	width:468px;
+	}
+.text_share_P{
+	float:left;
+	width:404px;
+	margin-left:36px;
+	margin-top:40px;
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:19px;
+	}
+.text_share_img{
+	float:left;
+	margin-left:45px;
+	margin-top:16px;
+	}
+
+.video{
+	float:left;
+	width:468px;
+	}
+.video iframe{
+	float:left;
+	}
+.text_item_p{
+	float:left;
+	width:100%;
+	text-indent:96px;
+	}
+.list_item{
+	float:left;
+	width:800px;
+	list-style:none;
+	margin-left:115px;
+	}
+.list_item li{
+	float:left;
+	margin-left:24px;
+	font-size:22px;
+	line-height:50px;
+	color:#979797;
+	}
+.inwrap{
+  width:960px;
+  margin:0 auto;
 }
-*/
