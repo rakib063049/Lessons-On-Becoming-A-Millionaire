@@ -26,4 +26,9 @@ gem 'therubyracer', '0.11.4'
 gem 'formtastic'
 gem 'formtastic-bootstrap'
 gem 'activeadmin'
+gem 'high_voltage'
 
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end

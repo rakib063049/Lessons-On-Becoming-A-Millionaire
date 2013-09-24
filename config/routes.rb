@@ -1,4 +1,6 @@
 LessonsOnBecomingAMillionaire::Application.routes.draw do
+  root to: 'home#index'
+  match "pages/:id" => 'pages#show', :as => :page, :format => false
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   resources :lessons
@@ -7,3 +9,4 @@ LessonsOnBecomingAMillionaire::Application.routes.draw do
   resources :sub_categories
   resources :categories
 end
+

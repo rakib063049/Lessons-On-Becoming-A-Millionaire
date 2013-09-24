@@ -1,12 +1,32 @@
-<%= semantic_form_for [:admin, @course] do |f| %>
-    <%= f.inputs do %>
-        <%= f.input :title, :wrapper_html => {:style => 'width: 56%'} %>
-        <%= f.input :sub_title, :wrapper_html => {:style => 'width: 56%'} %>
-        <%= f.input :summary, :wrapper_html => {:style => 'width: 56%'} %>
-    <% end %>
+<%= form_for @course, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :title, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :title, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :sub_title, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :sub_title, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :summary, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :summary, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :created_by, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :created_by, :class => 'number_field' %>
+    </div>
+  </div>
 
-    <%= f.actions do %>
-        <li class="cancel"><%= link_to 'Cancel', :back %></li>
-        <%= f.action :submit %>
-    <% end %>
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                courses_path, :class => 'btn' %>
+  </div>
 <% end %>
