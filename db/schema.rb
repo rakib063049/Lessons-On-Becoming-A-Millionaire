@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130921131906) do
+ActiveRecord::Schema.define(:version => 20130924072053) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -87,8 +87,13 @@ ActiveRecord::Schema.define(:version => 20130921131906) do
     t.string   "faq"
     t.string   "subscription"
     t.integer  "created_by"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "video"
+    t.string   "video_file_name"
+    t.integer  "video_file_size"
+    t.string   "video_content_type"
+    t.string   "aasm_state"
   end
 
   create_table "sub_categories", :force => true do |t|
