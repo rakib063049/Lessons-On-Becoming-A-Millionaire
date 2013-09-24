@@ -1,4 +1,5 @@
 ActiveAdmin.register Lesson do
+  menu :priority => 7
 
   filter :title, :as => :string
 

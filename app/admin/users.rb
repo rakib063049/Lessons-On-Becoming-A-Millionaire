@@ -1,4 +1,5 @@
 ActiveAdmin.register User do
+  menu :priority => 2
   index do
     column :first_name
     column :last_name

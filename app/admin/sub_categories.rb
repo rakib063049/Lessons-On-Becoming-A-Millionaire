@@ -1,5 +1,5 @@
 ActiveAdmin.register SubCategory do
-
+  menu :priority => 4
   filter :title, :as => :string
 
   index do
