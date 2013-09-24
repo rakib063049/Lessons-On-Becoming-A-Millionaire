@@ -27,6 +27,10 @@ gem 'formtastic'
 gem 'formtastic-bootstrap'
 gem 'activeadmin'
 gem 'high_voltage'
+gem 'aasm'
+gem 'paperclip'
+gem "paperclip-ffmpeg"
+gem 'jw_player_helper'
 
 group :development do
   gem "better_errors"
