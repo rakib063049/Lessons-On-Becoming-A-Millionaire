@@ -1,5 +1,6 @@
-ActiveAdmin.register AdminUser do     
-  index do                            
+ActiveAdmin.register AdminUser,  :as => "Admin" do
+  menu :priority => 8
+  index do
     column :email                     
     column :current_sign_in_at        
     column :last_sign_in_at           
