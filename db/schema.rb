@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130921131906) do
+ActiveRecord::Schema.define(:version => 20130924183013) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -55,6 +55,13 @@ ActiveRecord::Schema.define(:version => 20130921131906) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "categories_courses", :id => false, :force => true do |t|
+    t.integer "category_id"
+    t.integer "course_id"
+  end
+
+  add_index "categories_courses", ["course_id", "category_id"], :name => "index_categories_courses_on_course_id_and_category_id"
+
   create_table "courses", :force => true do |t|
     t.string   "title"
     t.string   "sub_title"
@@ -63,6 +70,20 @@ ActiveRecord::Schema.define(:version => 20130921131906) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "courses_instructors", :id => false, :force => true do |t|
+    t.integer "instructor_id"
+    t.integer "course_id"
+  end
+
+  add_index "courses_instructors", ["instructor_id", "course_id"], :name => "index_courses_instructors_on_instructor_id_and_course_id"
+
+  create_table "courses_lessons", :id => false, :force => true do |t|
+    t.integer "lesson_id"
+    t.integer "course_id"
+  end
+
+  add_index "courses_lessons", ["lesson_id", "course_id"], :name => "index_courses_lessons_on_lesson_id_and_course_id"
 
   create_table "instructors", :force => true do |t|
     t.string   "title"
