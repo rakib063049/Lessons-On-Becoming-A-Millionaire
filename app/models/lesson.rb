@@ -1,10 +1,11 @@
 class Lesson < ActiveRecord::Base
   include AASM
 
-  attr_accessible :title,  :vimeo_link,  :video_length,  :summary,  :action_steps,  :transcript,  :faq,  :subscription, :video, :video_file_name, :video_file_size, :video_content_type, :aasm_state
+  attr_accessible :title, :vimeo_link, :video_length, :summary, :action_steps, :transcript, :faq, :subscription, :video, :video_file_name, :video_file_size, :video_content_type, :aasm_state
+  has_and_belongs_to_many :courses
 
   has_attached_file :video, :style => {
-      :thumb => { :geometry => "100x100#", :format => 'jpg', :time => 10 }
+      :thumb => {:geometry => "100x100#", :format => 'jpg', :time => 10}
   }
 
   aasm do
@@ -55,5 +56,4 @@ class Lesson < ActiveRecord::Base
   def set_new_filename
     update_attribute(:video_file_name, "#{id}.flv")
   end
-
 end
