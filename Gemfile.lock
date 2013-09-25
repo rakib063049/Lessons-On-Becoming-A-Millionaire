@@ -11,6 +11,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    aasm (3.0.22)
     actionmailer (3.2.12)
       actionpack (= 3.2.12)
       mail (~> 2.4.4)
@@ -117,6 +118,7 @@ GEM
       jquery-rails
       railties (>= 3.1.0)
     json (1.8.0)
+    jw_player_helper (0.0.1)
     kaminari (0.14.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -147,6 +149,8 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.0)
       mime-types
+    paperclip-ffmpeg (0.12.0)
+      paperclip (>= 2.5.2)
     polyamorous (0.5.0)
       activerecord (~> 3.0)
     polyglot (0.3.3)
@@ -207,6 +211,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aasm
   activeadmin
   better_errors
   binding_of_caller
@@ -222,11 +227,13 @@ DEPENDENCIES
   high_voltage
   jquery-rails (~> 2.3.0)
   jquery-ui-rails
+  jw_player_helper
   less-rails
   libv8
   mysql2
   omniauth (~> 1.1.1)
   paperclip
+  paperclip-ffmpeg
   rails (= 3.2.12)
   sass-rails (~> 3.2.3)
   therubyracer (= 0.11.4)

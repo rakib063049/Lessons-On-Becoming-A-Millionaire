@@ -2,18 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ab47ca5-833e-409b-b57b-55fa301a53f9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/author.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/catagory_img.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/catagory_img2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/catagory_img3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/catagory_img4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/content_img.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/content_img2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/content_img4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/cotation.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/fb_share.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/fb_share2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/iphone_ipad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/logo_iphone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/marque.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/tv_img.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/ytv.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/ytv2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/ytv3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/ytv4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/ytv5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.rvmrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130924072053_add_videos_to_lesson.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130924163756_create_table_categories_courses.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130924164018_create_table_courses_instructors.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130924183013_create_table_courses_lessons.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Lessons On Becoming A Millionaire.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pages/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/swfobject.js" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/Lessons-On-Becoming-A-Millionaire.iml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/lessons/new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/log/development.log" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/BEA/F80/sprockets%2F422852d5e990c5459022e0383380513b" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/C3C/320/sprockets%2F462f3807e9915e9278c87756545ab317" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/C61/960/sprockets%2F1ef84864346a02684e287b33272c99b9" afterPath="" />
@@ -206,19 +228,43 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/f798f08cb2d51ad4c9ae9eb528dbb2b5c3e86e55/_render-gradients.scssc" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/f798f08cb2d51ad4c9ae9eb528dbb2b5c3e86e55/_shape-size-stripper.scssc" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/pids/server.pid" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/footer-logo.png" afterPath="$PROJECT_DIR$/app/assets/images/footer-logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/layouts/_active_admin_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_active_admin_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_active_admin_footer.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/instructors/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/instructors/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/courses/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/courses/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/lessons/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/lessons/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sub_categories/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/sub_categories/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/active_admin.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/active_admin.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/admin_user.rb" afterPath="$PROJECT_DIR$/app/admin/admin_user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/categories.rb" afterPath="$PROJECT_DIR$/app/admin/categories.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/category.rb" afterPath="$PROJECT_DIR$/app/models/category.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/course.rb" afterPath="$PROJECT_DIR$/app/models/course.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/courses.rb" afterPath="$PROJECT_DIR$/app/admin/courses.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/dashboard.rb" afterPath="$PROJECT_DIR$/app/admin/dashboard.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/courses/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/courses/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/courses/index.html.erb" afterPath="$PROJECT_DIR$/app/views/courses/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/instructor.rb" afterPath="$PROJECT_DIR$/app/models/instructor.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/script/rails" afterPath="$PROJECT_DIR$/script/rails" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/instructors.rb" afterPath="$PROJECT_DIR$/app/admin/instructors.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/lesons.rb" afterPath="$PROJECT_DIR$/app/admin/lesons.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/lesson.rb" afterPath="$PROJECT_DIR$/app/models/lesson.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/lessons.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/lessons.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/courses/new.html.erb" afterPath="$PROJECT_DIR$/app/views/courses/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/courses/show.html.erb" afterPath="$PROJECT_DIR$/app/views/courses/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/lessons/show.html.erb" afterPath="$PROJECT_DIR$/app/views/lessons/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/style.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/sub_categories.rb" afterPath="$PROJECT_DIR$/app/admin/sub_categories.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/users.rb" afterPath="$PROJECT_DIR$/app/admin/users.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Lessons-On-Becoming-A-Millionaire.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -270,8 +316,15 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="0" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="13" column="20" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1380114862474" expanded="true" signature="1018:1130" placeholder="{...}" />
+                <marker date="1380114862474" expanded="true" signature="1301:1372" placeholder="{...}" />
+                <marker date="1380114862474" expanded="true" signature="1404:1514" placeholder="{...}" />
+                <marker date="1380114862474" expanded="true" signature="1780:1787" placeholder="{...}" />
+                <marker date="1380114862474" expanded="true" signature="2986:3078" placeholder="{...}" />
+                <marker date="1380114862474" expanded="true" signature="3045:3162" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -288,7 +341,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="14" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
+            <state line="32" column="14" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -297,7 +350,7 @@
       <file leaf-file-name="instructor.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/instructor.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="19" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
+            <state line="2" column="19" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -306,7 +359,7 @@
       <file leaf-file-name="instructors.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/admin/instructors.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="8" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
+            <state line="15" column="8" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -321,19 +374,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/instructors/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="72" selection-start="492" selection-end="492" vertical-scroll-proportion="0.15742129">
+            <state line="13" column="96" selection-start="636" selection-end="636" vertical-scroll-proportion="-8.125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/lessons/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="4" column="0" selection-start="199" selection-end="199" vertical-scroll-proportion="0.089955024">
               <folding />
             </state>
           </provider>
@@ -342,7 +395,7 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/lessons/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="9" selection-start="845" selection-end="845" vertical-scroll-proportion="0.0">
+            <state line="16" column="9" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -380,8 +433,8 @@
         <option value="$PROJECT_DIR$/app/models/instructor.rb" />
         <option value="$PROJECT_DIR$/app/views/instructors/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/style.css" />
         <option value="$USER_HOME$/.rvm/gems/ruby-1.9.3-p448/gems/less-2.4.0/lib/less/js/.gitignore" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/style.css" />
       </list>
     </option>
   </component>
@@ -1032,13 +1085,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/lessons/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="12" selection-start="12" selection-end="29" vertical-scroll-proportion="-0.0">
@@ -1048,28 +1094,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="14" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
+        <state line="32" column="14" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/instructors.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="8" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0">
+        <state line="15" column="8" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/instructor.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
+        <state line="2" column="19" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/lessons/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="9" selection-start="845" selection-end="845" vertical-scroll-proportion="0.0">
+        <state line="16" column="9" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1088,16 +1134,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css">
+    <entry file="file://$PROJECT_DIR$/app/views/instructors/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="0" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.0">
+        <state line="13" column="96" selection-start="636" selection-end="636" vertical-scroll-proportion="-8.125">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/instructors/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="72" selection-start="492" selection-end="492" vertical-scroll-proportion="0.15742129">
+        <state line="13" column="20" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1380114862474" expanded="true" signature="1018:1130" placeholder="{...}" />
+            <marker date="1380114862474" expanded="true" signature="1301:1372" placeholder="{...}" />
+            <marker date="1380114862474" expanded="true" signature="1404:1514" placeholder="{...}" />
+            <marker date="1380114862474" expanded="true" signature="1780:1787" placeholder="{...}" />
+            <marker date="1380114862474" expanded="true" signature="2986:3078" placeholder="{...}" />
+            <marker date="1380114862474" expanded="true" signature="3045:3162" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/lessons/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="199" selection-end="199" vertical-scroll-proportion="0.089955024">
           <folding />
         </state>
       </provider>

@@ -1,12 +1,32 @@
 <%= semantic_form_for [:admin, @course] do |f| %>
+    <% @form_object = f %>
     <%= f.inputs do %>
         <%= f.input :title, :wrapper_html => {:style => 'width: 56%'} %>
         <%= f.input :sub_title, :wrapper_html => {:style => 'width: 56%'} %>
         <%= f.input :summary, :wrapper_html => {:style => 'width: 56%'} %>
+        <%= f.input :category_ids, :as => :select, :collection => Category.all.collect { |c| [c.title, c.id] }, :prompt => 'Select category', :label => "Category", :wrapper_html => {:style => 'width: 56%'} %>
+        <%#= link_to "Add More", "javascript:void(0)", :class => 'course_category_ids' %>
+
+        <%= f.input :instructor_ids, :as => :select, :collection => Instructor.all.collect { |c| [c.title, c.id] }, :prompt => 'Select Instructor', :label => "Instructor", :wrapper_html => {:style => 'width: 56%'} %>
+        <%= f.input :lesson_ids, :as => :select, :collection => Lesson.all.collect { |c| [c.title, c.id] }, :prompt => 'Select Lesson', :label => "Lesson", :wrapper_html => {:style => 'width: 56%'} %>
     <% end %>
 
     <%= f.actions do %>
         <li class="cancel"><%= link_to 'Cancel', :back %></li>
         <%= f.action :submit %>
     <% end %>
+
 <% end %>
+
+<script type="text/javascript">
+    $('.course_category_ids').click(function () {
+        $("<li class=select input optional id=course_category_ids_input>" +
+                "<select id=course_category_ids name=course[category_ids]>" +
+                "<option value=>Select category</option>" +
+                "<% Category.all.each do |category| %>" +
+                "<option value=<%= category.id %> selected=selected><%= category.title %></option>" +
+                "<% end %>" +
+                "</select>" +
+                "</li>").insertBefore(this);
+    });
+</script>

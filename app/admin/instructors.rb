@@ -1,5 +1,5 @@
 ActiveAdmin.register Instructor do
-
+  menu :priority => 5
   filter :title, :as => :string
 
   index do
