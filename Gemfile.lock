@@ -11,6 +11,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    aasm (3.0.22)
     actionmailer (3.2.12)
       actionpack (= 3.2.12)
       mail (~> 2.4.4)
@@ -67,6 +68,10 @@ GEM
     breadcrumbs_on_rails (2.3.0)
     builder (3.0.4)
     cancan (1.6.10)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.1)
+      climate_control (>= 0.0.3, < 1.0)
     coderay (1.1.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -99,6 +104,7 @@ GEM
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
     hashie (2.0.5)
+    high_voltage (1.2.4)
     hike (1.2.3)
     i18n (0.6.5)
     inherited_resources (1.4.1)
@@ -112,6 +118,7 @@ GEM
       jquery-rails
       railties (>= 3.1.0)
     json (1.8.0)
+    jw_player_helper (0.0.1)
     kaminari (0.14.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -137,6 +144,13 @@ GEM
       hashie (>= 1.2, < 3)
       rack
     orm_adapter (0.4.0)
+    paperclip (3.5.1)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.0)
+      mime-types
+    paperclip-ffmpeg (0.12.0)
+      paperclip (>= 2.5.2)
     polyamorous (0.5.0)
       activerecord (~> 3.0)
     polyglot (0.3.3)
@@ -197,6 +211,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aasm
   activeadmin
   better_errors
   binding_of_caller
@@ -209,12 +224,16 @@ DEPENDENCIES
   devise_invitable (~> 1.0.0)
   formtastic
   formtastic-bootstrap
+  high_voltage
   jquery-rails (~> 2.3.0)
   jquery-ui-rails
+  jw_player_helper
   less-rails
   libv8
   mysql2
   omniauth (~> 1.1.1)
+  paperclip
+  paperclip-ffmpeg
   rails (= 3.2.12)
   sass-rails (~> 3.2.3)
   therubyracer (= 0.11.4)

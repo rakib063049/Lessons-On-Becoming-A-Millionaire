@@ -1,4 +1,5 @@
 ActiveAdmin.register Course do
+  menu :priority => 6
 
   filter :title, :as => :string
 

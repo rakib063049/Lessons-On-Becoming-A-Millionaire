@@ -11,19 +11,3 @@
     <% end %>
 
 <% end %>
-
-<h2 class = 'subcategory'>Create Subcategory</h2>
-<%= semantic_form_for [:admin, @category.sub_categories.build] do |f| %>
-    <%= f.inputs do %>
-        <%= f.input :category, :as => :select, :collection => Category.all.collect {|c| [c.title, c.id]}, :prompt => 'Please select the category', :wrapper_html => {:style => 'width: 56%'} %>
-        <%= f.input :title, :wrapper_html => {:style => 'width: 56%'} %>
-        <%= f.input :sub_title, :wrapper_html => {:style => 'width: 56%'} %>
-        <%= f.input :summary, :wrapper_html => {:style => 'width: 56%'} %>
-
-    <%	end  %>
-    <%= f.actions do %>
-        <li class="cancel"><%= link_to 'Cancel', admin_categories_path %></li>
-        <%= f.action :submit %>
-    <% end %>
-
-<% end %>
