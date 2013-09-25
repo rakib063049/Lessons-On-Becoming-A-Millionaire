@@ -2,12 +2,15 @@
     <%= f.inputs do %>
         <%= f.input :title, :wrapper_html => {:style => 'width: 56%'} %>
         <%= f.input :vimeo_link, :wrapper_html => {:style => 'width: 56%'} %>
-        <%= f.input :video, :wrapper_html => {:style => 'width: 56%'} %>
+        <%= f.input :video_length, :wrapper_html => {:style => 'width: 56%'} %>
         <%= f.input :summary, :wrapper_html => {:style => 'width: 56%'} %>
+        <%= f.input :category, :as => :select, :collection => Category.all.collect {|c| [c.title, c.id]}, :prompt => 'Select a Category', :wrapper_html => {:style => 'width: 56%'} %>
+        <%= f.input :instructor, :as => :select, :collection => Instructor.all.collect {|i| [i.title, i.id]}, :prompt => 'Select an Instructor', :wrapper_html => {:style => 'width: 56%'} %>
         <%= f.input :action_steps, :wrapper_html => {:style => 'width: 56%'} %>
         <%= f.input :transcript, :wrapper_html => {:style => 'width: 56%'} %>
         <%= f.input :faq, :wrapper_html => {:style => 'width: 56%'} %>
         <%= f.input :subscription, :wrapper_html => {:style => 'width: 56%'} %>
+        <%= f.input :photo, :wrapper_html => {:style => 'width: 56%'}, :label => "Upload thumbnail" %>
     <% end %>
 
     <%= f.actions do %>

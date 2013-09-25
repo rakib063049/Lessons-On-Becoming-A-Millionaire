@@ -1,3 +1,5 @@
+body{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12px; padding:0;}
+
 .clear {
     clear:both;
     font-size:1px;
@@ -62,6 +64,7 @@ body {
 }
 .header_main {
     width:745px; margin:0 auto;
+    margin-bottom: -5px;
 }
 
 

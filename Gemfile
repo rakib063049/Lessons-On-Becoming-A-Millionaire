@@ -31,7 +31,7 @@ gem 'aasm'
 gem 'paperclip'
 gem "paperclip-ffmpeg"
 gem 'jw_player_helper'
-
+gem 'friendly_id'
 group :development do
   gem "better_errors"
   gem "binding_of_caller"

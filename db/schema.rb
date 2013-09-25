@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130924183013) do
+ActiveRecord::Schema.define(:version => 20130925190320) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -96,7 +96,10 @@ ActiveRecord::Schema.define(:version => 20130924183013) do
     t.datetime "photo_updated_at"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
+    t.string   "slug"
   end
+
+  add_index "instructors", ["slug"], :name => "index_instructors_on_slug", :unique => true
 
   create_table "lessons", :force => true do |t|
     t.string   "title"
@@ -115,6 +118,12 @@ ActiveRecord::Schema.define(:version => 20130924183013) do
     t.integer  "video_file_size"
     t.string   "video_content_type"
     t.string   "aasm_state"
+    t.integer  "category_id"
+    t.integer  "instructor_id"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
 
   create_table "sub_categories", :force => true do |t|

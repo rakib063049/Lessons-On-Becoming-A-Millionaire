@@ -25,3 +25,8 @@
 .box1{border-bottom:1px solid #ccc; padding:15px 0;}
 .box1 a{display:inline-block; float:left;}
 .inner-box ul li a:hover{text-decoration:underline;}
+.content_nav{padding:15px 0 16px 0;}
+.content_nav ul{list-style:none; display:inline-block; padding:0; margin:0;}
+.content_nav ul li{padding:0 5px; margin:0;float:left; display:inline-block;font-family:Arial, Helvetica, sans-serif; font-size:9px; color:#004a80;}
+.content_nav ul li a{ display:inline-block;color:#004a80;}
+.content_nav ul li a.current{color:#000;}
