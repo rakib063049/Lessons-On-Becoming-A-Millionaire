@@ -2,268 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ab47ca5-833e-409b-b57b-55fa301a53f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/author.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/catagory_img.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/catagory_img2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/catagory_img3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/catagory_img4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/content_img.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/content_img2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/content_img4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/cotation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/fb_share.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/fb_share2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/iphone_ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/logo_iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/marque.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/tv_img.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/ytv.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/ytv2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/ytv3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/ytv4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/ytv5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.rvmrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130924072053_add_videos_to_lesson.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130924163756_create_table_categories_courses.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130924164018_create_table_courses_instructors.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130924183013_create_table_courses_lessons.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Lessons On Becoming A Millionaire.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pages/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/swfobject.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/Lessons-On-Becoming-A-Millionaire.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/lessons/new.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/development.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/BEA/F80/sprockets%2F422852d5e990c5459022e0383380513b" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/C3C/320/sprockets%2F462f3807e9915e9278c87756545ab317" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/C61/960/sprockets%2F1ef84864346a02684e287b33272c99b9" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/C62/1D0/sprockets%2F1638f87db345b13872695759502b54fe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/C67/9A0/sprockets%2F9fa4371c6109ddc2797294096805e687" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/C73/200/sprockets%2F05a0b0e43e43515ba57b4f7967346241" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/C7A/170/sprockets%2Ff1663d34d4b6003379113df98f1433a5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/C80/860/sprockets%2F8442b6129c30b9177e537db84606e4b1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/C91/670/sprockets%2F8434910a7dcc471376970de4e6f88417" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/C93/6A0/sprockets%2Fcd7d83843f49a594b5491573e508e721" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/C9E/890/sprockets%2F21ee96b0a00069f852fbd420b0351477" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CA0/DB0/sprockets%2Fb8d42949e061501a753d0e3a8be12522" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CA9/470/sprockets%2F3c13341992599b0e3c6062f6aae0917a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CB3/8A0/sprockets%2Ffa41e6ce6575be0f50492d6515854280" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CB5/9E0/sprockets%2Fe459168835a5f27b832ace20874f7c10" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CB8/5A0/sprockets%2Ff0481b708e88002458e5ac6f24db6578" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CBC/9D0/sprockets%2Fc046163f389e357a0f797cb57721cb67" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CBD/BA0/sprockets%2Ff1749716d4e5602e7e932ae6eb809902" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CC5/AC0/sprockets%2F73cf352579b646a784a2780873ee5ea8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CC8/D60/sprockets%2F58956c834e58a96b2841ad9e9a64b076" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CCF/F30/sprockets%2F3a263af29e01435ba0b817845aef6224" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CD7/6F0/sprockets%2Fbd3936370d0f952ada5774e2230046ed" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CD8/370/sprockets%2F357970feca3ac29060c1e3861e2c0953" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CD8/C60/sprockets%2F14a26a500e72cc791f550dd9e20693d5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CDB/040/sprockets%2Fc732474e67003a4eb840eb44c5ca9385" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CDB/910/sprockets%2F26098b294d10eec3e946bb124334e5e4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CDD/170/sprockets%2F10f08166efc9f46ec5604d040c82349b" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CE2/720/sprockets%2F922b15b49871931e5df1d0a2be4826f8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CE4/F40/sprockets%2F46ef378397125ec6711c3a9782ba5ca2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CE7/610/sprockets%2F526a844d965f3950a5cdfd391a922b28" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CE9/EF0/sprockets%2Fc3a6ba8339492d4ab52855fb68733e29" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CF0/180/sprockets%2Fbb0763f4727ac991d5b74700e697e6e7" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/CF0/DA0/sprockets%2Fd7d5b37686831d37c4dd75e645f5e016" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D08/730/sprockets%2Fea177f006b66016e137d6fce018149eb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D09/6F0/sprockets%2F0f69fe87b4b574153bdc60711a6ca208" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D0E/C80/sprockets%2F1450c8f5d2b6e201d72fa175586bbd97" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D17/A30/sprockets%2F8935aee4dcc4151e42dc99ae45245673" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D1A/D50/sprockets%2Fbcf43d587cef3bb297619517031d65f7" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D1F/4A0/sprockets%2Fe524dd74c777d910af447c8d96354cd3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D20/800/sprockets%2F35f35fbbd8a51930fe57e5067834c96f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D29/280/sprockets%2F04fd073ef39e04ced71111a204cb70e6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D30/5A0/sprockets%2Fa528132df5d2b9955878d9dfba698f76" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D32/A10/sprockets%2F13fe41fee1fe35b49d145bcc06610705" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D38/360/sprockets%2F15d35c5e90a19f1d6fce397d24d2420a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D38/540/sprockets%2F86e1ad844bc9df4491a2a52b870421db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D43/4F0/sprockets%2F4a49ddf6b8c3551b3a5b6936c419de43" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D47/A90/sprockets%2F5e74394bc04699c78b4b8ab65da1bc82" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D48/640/sprockets%2F9f4f18d910b678b1d0777e04cdaf6f24" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D4E/1B0/sprockets%2Ff7cbd26ba1d28d48de824f0e94586655" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D4F/DA0/sprockets%2F91dfb1e3477659b982feeacb705e8073" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D55/790/sprockets%2F5e2a651b66ae6957c3c669ffc6f2f538" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D58/C80/sprockets%2F05f97b75ce964517f63f11eff79bb73e" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D58/D90/sprockets%2Fd4faf896ac7c88d9e147a558a9067f13" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D59/D70/sprockets%2Fed9f0de1b65ae8d7ef89087c83728461" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D5A/EA0/sprockets%2Fd771ace226fc8215a3572e0aa35bb0d6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D5D/6A0/sprockets%2Fc74b55c1ae124a1535a067cc4807ceec" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D62/210/sprockets%2F0c9f5a68e10c76b2d39acc37bb242e22" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D6C/8C0/sprockets%2Fe6bf0282ee69b25ac6ff614850bb633a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D6D/0B0/sprockets%2Fffbdf4c0bab57f1221860e057a69e854" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D6D/810/sprockets%2Fbc8732d07ef52eb187bee70af534a274" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D7A/520/sprockets%2Fd6627db6f4d7e837c881aec563dc412d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D7B/C70/sprockets%2Fa5ecceb76440388bce3f26889818ea3a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D84/BE0/sprockets%2F25efc98bebf89d983d173aa946b038b7" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D93/4C0/sprockets%2F857ecd2092cee11f740b3cf2e373ad2a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D9A/4F0/sprockets%2F0e273b1dd1481a571f5de96da1fe7c4d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/D9F/740/sprockets%2F44c709e2cc577d386e3efcde15da0e31" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DA0/960/sprockets%2F4ee270583e997ff51a0cd35cdb5ab65a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DB1/8F0/sprockets%2Fb064a88fcfb3d7bdd51f81790c78f9a8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DB2/450/sprockets%2Fad11cdd1e4cd22259ceb1a92460b6a2c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DB6/8A0/sprockets%2F064eda2fdf6f2e9f3519e4c9e378e3d8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DBE/BB0/sprockets%2F35f43dd3c4d4d60c8ec4b2f23ed3d00c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DC2/150/sprockets%2Feda30717be8caea509a0f7ff4fa26321" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DC7/BC0/sprockets%2F45c7a5ba91b940cd41aad9cfae480a69" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DD0/E30/sprockets%2Fc64cf35a7bb5b38ed48e08dfa12e2e57" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DD2/750/sprockets%2Ff70dee8c3d675153ad76abe3f730dc4f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DD5/500/sprockets%2Fb9e3e96df9676a026e00f3bd7eefb1a4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DD7/950/sprockets%2F3665aa30fefe8e40fe1f86cc5f90de35" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DDB/CF0/sprockets%2Fc59aeff0f5450f378ddc235374ddc9ed" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DDC/400/sprockets%2Fcffd775d018f68ce5dba1ee0d951a994" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DDE/420/sprockets%2Ffb8b186d5bf0307f86f65fc787d2adeb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DE7/2B0/sprockets%2Fee6bad5332ca3eb26e60d43032daefa5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DED/0E0/sprockets%2Fc3dcde41c869eadae50b746b0ba4118a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/DFB/950/sprockets%2Ffad71150a84bd4faf4b9def72d352c8b" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/E04/890/sprockets%2F2f5173deea6c795b8fdde723bb4b63af" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/E19/2A0/sprockets%2F10fcfbe6ebae11a40c8eac41939a1b9a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/E25/4C0/sprockets%2Fde2fd9fd11c04a582cdbbe3d84a35ae6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/E25/CF0/sprockets%2Fffac0d2f3fbffe14e41f2cf4814152dd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/E55/9B0/sprockets%2Fdbe01b84fe24cd4cdc9ebcbf84d0408b" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/E59/4E0/sprockets%2Fdea5e7f68ddcb811c2e05acab86b1e7d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/EBE/CB0/sprockets%2F456cfcac9cf5ad0c04f4deaa4f79ccef" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/assets/EC1/320/sprockets%2Fb29655fecbafd82ddabde06cec5f7cc6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/0064e841d80b2d28be98d6fbd10d1acc8b404e9b/_all.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/0064e841d80b2d28be98d6fbd10d1acc8b404e9b/_buttons.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/0064e841d80b2d28be98d6fbd10d1acc8b404e9b/_gradients.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/0064e841d80b2d28be98d6fbd10d1acc8b404e9b/_icons.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/0064e841d80b2d28be98d6fbd10d1acc8b404e9b/_reset.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/0064e841d80b2d28be98d6fbd10d1acc8b404e9b/_rounded.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/0064e841d80b2d28be98d6fbd10d1acc8b404e9b/_sections.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/0064e841d80b2d28be98d6fbd10d1acc8b404e9b/_shadows.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/0064e841d80b2d28be98d6fbd10d1acc8b404e9b/_typography.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/0064e841d80b2d28be98d6fbd10d1acc8b404e9b/_utilities.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/0064e841d80b2d28be98d6fbd10d1acc8b404e9b/_variables.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/06804b9081dd811ca4eec720f9e3fc92f2d5a773/active_admin.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/06804b9081dd811ca4eec720f9e3fc92f2d5a773/categories.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/06804b9081dd811ca4eec720f9e3fc92f2d5a773/courses.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/06804b9081dd811ca4eec720f9e3fc92f2d5a773/home.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/06804b9081dd811ca4eec720f9e3fc92f2d5a773/instructors.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/06804b9081dd811ca4eec720f9e3fc92f2d5a773/lessons.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/06804b9081dd811ca4eec720f9e3fc92f2d5a773/scaffolds.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/06804b9081dd811ca4eec720f9e3fc92f2d5a773/sub_categories.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/167969daee199c91b72e4092000b30091866e553/_dashboard.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/167969daee199c91b72e4092000b30091866e553/_logged_out.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/2785885faca08a311c633b9b42e3f18cb8d09ce7/_button.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/2785885faca08a311c633b9b42e3f18cb8d09ce7/_clearfix.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/2785885faca08a311c633b9b42e3f18cb8d09ce7/_font-family.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/2785885faca08a311c633b9b42e3f18cb8d09ce7/_hide-text.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/2785885faca08a311c633b9b42e3f18cb8d09ce7/_html5-input-types.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/2785885faca08a311c633b9b42e3f18cb8d09ce7/_position.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/2785885faca08a311c633b9b42e3f18cb8d09ce7/_prefixer.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/2785885faca08a311c633b9b42e3f18cb8d09ce7/_retina-image.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/2785885faca08a311c633b9b42e3f18cb8d09ce7/_size.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/2785885faca08a311c633b9b42e3f18cb8d09ce7/_timing-functions.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/2785885faca08a311c633b9b42e3f18cb8d09ce7/_triangle.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/5a1981467a41bc5baac13a843b0297a8537142a7/_compact.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/5a1981467a41bc5baac13a843b0297a8537142a7/_flex-grid.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/5a1981467a41bc5baac13a843b0297a8537142a7/_grid-width.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/5a1981467a41bc5baac13a843b0297a8537142a7/_linear-gradient.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/5a1981467a41bc5baac13a843b0297a8537142a7/_modular-scale.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/5a1981467a41bc5baac13a843b0297a8537142a7/_px-to-em.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/5a1981467a41bc5baac13a843b0297a8537142a7/_radial-gradient.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/5a1981467a41bc5baac13a843b0297a8537142a7/_tint-shade.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/5a1981467a41bc5baac13a843b0297a8537142a7/_transition-property-name.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/71025df839647d7692ec7d13b6c9dea9fd2fa104/_bourbon-deprecated-upcoming.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/71025df839647d7692ec7d13b6c9dea9fd2fa104/_bourbon.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/88bf8034f3b6dd70d0d2ada995a1c758f99f057f/_base.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/88bf8034f3b6dd70d0d2ada995a1c758f99f057f/_forms.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/88bf8034f3b6dd70d0d2ada995a1c758f99f057f/_header.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/88bf8034f3b6dd70d0d2ada995a1c758f99f057f/_mixins.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/88bf8034f3b6dd70d0d2ada995a1c758f99f057f/_typography.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/88bf8034f3b6dd70d0d2ada995a1c758f99f057f/print.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/b0825369202ba753e740bc689172f4d43f1f673b/_batch_actions.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/b0825369202ba753e740bc689172f4d43f1f673b/_blank_slates.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/b0825369202ba753e740bc689172f4d43f1f673b/_breadcrumbs.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/b0825369202ba753e740bc689172f4d43f1f673b/_buttons.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/b0825369202ba753e740bc689172f4d43f1f673b/_columns.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/b0825369202ba753e740bc689172f4d43f1f673b/_comments.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/b0825369202ba753e740bc689172f4d43f1f673b/_date_picker.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/b0825369202ba753e740bc689172f4d43f1f673b/_dropdown_menu.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/b0825369202ba753e740bc689172f4d43f1f673b/_flash_messages.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/b0825369202ba753e740bc689172f4d43f1f673b/_grid.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/b0825369202ba753e740bc689172f4d43f1f673b/_index_list.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/b0825369202ba753e740bc689172f4d43f1f673b/_links.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/b0825369202ba753e740bc689172f4d43f1f673b/_pagination.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/b0825369202ba753e740bc689172f4d43f1f673b/_panels.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/b0825369202ba753e740bc689172f4d43f1f673b/_popovers.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/b0825369202ba753e740bc689172f4d43f1f673b/_scopes.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/b0825369202ba753e740bc689172f4d43f1f673b/_status_tags.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/b0825369202ba753e740bc689172f4d43f1f673b/_table_tools.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/b0825369202ba753e740bc689172f4d43f1f673b/_tables.css.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/c343715c3839024f9745c895b42091a325f42e1e/_footer.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/c343715c3839024f9745c895b42091a325f42e1e/_main_structure.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/c343715c3839024f9745c895b42091a325f42e1e/_title_bar.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_animation.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_appearance.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_backface-visibility.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_background-image.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_background.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_border-image.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_border-radius.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_box-sizing.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_columns.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_flex-box.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_font-face.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_hidpi-media-query.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_image-rendering.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_inline-block.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_keyframes.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_linear-gradient.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_perspective.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_placeholder.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_radial-gradient.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_transform.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_transition.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/e074e17eed506f266072b1c786f9037658122533/_user-select.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/f798f08cb2d51ad4c9ae9eb528dbb2b5c3e86e55/_deprecated-webkit-gradient.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/f798f08cb2d51ad4c9ae9eb528dbb2b5c3e86e55/_gradient-positions-parser.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/f798f08cb2d51ad4c9ae9eb528dbb2b5c3e86e55/_linear-positions-parser.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/f798f08cb2d51ad4c9ae9eb528dbb2b5c3e86e55/_radial-arg-parser.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/f798f08cb2d51ad4c9ae9eb528dbb2b5c3e86e55/_radial-positions-parser.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/f798f08cb2d51ad4c9ae9eb528dbb2b5c3e86e55/_render-gradients.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/cache/sass/f798f08cb2d51ad4c9ae9eb528dbb2b5c3e86e55/_shape-size-stripper.scssc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tmp/pids/server.pid" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/layouts/_active_admin_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_active_admin_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_active_admin_footer.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/courses/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/courses/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/lessons/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/lessons/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sub_categories/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/sub_categories/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/active_admin.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/active_admin.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/admin_user.rb" afterPath="$PROJECT_DIR$/app/admin/admin_user.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/arrow_down.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/copy_li.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/footer_shadow_line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/google_pluse.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/icon1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/icon2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/icon3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/linkedin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/nav_li.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/author.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/catagory_img.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/catagory_img2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/catagory_img3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/catagory_img4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/content_img.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/content_img2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/content_img4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/cotation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/googleplus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/header-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/in-social.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/iphone_ipad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/logo_iphone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/marque.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/tv_img.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/ytv.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/images/ytv2.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/facebook.png" afterPath="$PROJECT_DIR$/app/assets/images/facebook.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/logo.png" afterPath="$PROJECT_DIR$/app/assets/images/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D26/1F0/sprockets%2Fa8df609d8505897e974c22e60fb8fe40" afterPath="$PROJECT_DIR$/tmp/cache/assets/D26/1F0/sprockets%2Fa8df609d8505897e974c22e60fb8fe40" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/D6E/210/sprockets%2Fde24e8ba6334c0d1e7c2eb67e33275d9" afterPath="$PROJECT_DIR$/tmp/cache/assets/D6E/210/sprockets%2Fde24e8ba6334c0d1e7c2eb67e33275d9" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/twitter.png" afterPath="$PROJECT_DIR$/app/assets/images/twitter.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/instructors/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/instructors/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/admin-style.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/admin-style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/categories.rb" afterPath="$PROJECT_DIR$/app/admin/categories.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/category.rb" afterPath="$PROJECT_DIR$/app/models/category.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/course.rb" afterPath="$PROJECT_DIR$/app/models/course.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/courses.rb" afterPath="$PROJECT_DIR$/app/admin/courses.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/dashboard.rb" afterPath="$PROJECT_DIR$/app/admin/dashboard.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/courses/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/courses/edit.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/courses/index.html.erb" afterPath="$PROJECT_DIR$/app/views/courses/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/instructor.rb" afterPath="$PROJECT_DIR$/app/models/instructor.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/instructors.rb" afterPath="$PROJECT_DIR$/app/admin/instructors.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/lesons.rb" afterPath="$PROJECT_DIR$/app/admin/lesons.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/lesson.rb" afterPath="$PROJECT_DIR$/app/models/lesson.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/lessons.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/lessons.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/courses/new.html.erb" afterPath="$PROJECT_DIR$/app/views/courses/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/instructors.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/instructors.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/courses/show.html.erb" afterPath="$PROJECT_DIR$/app/views/courses/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/lessons/show.html.erb" afterPath="$PROJECT_DIR$/app/views/lessons/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/instructors/show.html.erb" afterPath="$PROJECT_DIR$/app/views/instructors/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/style.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/sub_categories.rb" afterPath="$PROJECT_DIR$/app/admin/sub_categories.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/users.rb" afterPath="$PROJECT_DIR$/app/admin/users.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Lessons-On-Becoming-A-Millionaire.iws" />
@@ -272,28 +54,31 @@
     <file path="/categories.rb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1379787544352" ignored="false" />
     <file path="/base.rb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1379835375574" ignored="false" />
     <file path="/_active_admin_footer.html.erb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1379923216656" ignored="false" />
-    <file path="/application.html.erb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1379855074156" ignored="false" />
+    <file path="/application.html.erb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1380117244389" ignored="false" />
     <file path="$USER_HOME$/personal/rubbama/app/views/home/index.html.haml" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1379845191411" ignored="false" />
     <file path="/courses_controller.rb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1379845139884" ignored="false" />
     <file path="/home.html.erb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1379855891706" ignored="false" />
-    <file path="/style.css" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1380100940377" ignored="false" />
-    <file path="/home_controller.rb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1379846355099" ignored="false" />
+    <file path="/style.css" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1380120871877" ignored="false" />
+    <file path="/home_controller.rb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1380118245359" ignored="false" />
     <file path="/application.css" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1379854485962" ignored="false" />
-    <file path="/_footer.html.erb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1379869540404" ignored="false" />
+    <file path="/_footer.html.erb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1380117610694" ignored="false" />
     <file path="/routes.rb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1379849779663" ignored="false" />
     <file path="/index.html.erb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1379851429558" ignored="false" />
     <file path="/home.css.scss" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1379851214860" ignored="false" />
-    <file path="/_header.html.erb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1379923976548" ignored="false" />
+    <file path="/_header.html.erb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1380115733190" ignored="false" />
     <file path="/active_admin.css.scss" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1379922874736" ignored="false" />
     <file path="/Gemfile" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1380099690506" ignored="false" />
     <file path="/privacy_policy.html.erb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1379868193043" ignored="false" />
     <file path="/site_map.html.erb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1379868147887" ignored="false" />
     <file path="/terms_and_condition.html.erb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1379868367649" ignored="false" />
     <file path="/admin-style.css" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1379923249614" ignored="false" />
-    <file path="/instructor.rb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1380100057656" ignored="false" />
+    <file path="/instructor.rb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1380115033643" ignored="false" />
     <file path="/_form.html.erb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1380100253391" ignored="false" />
     <file path="/instructors.rb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1380099933474" ignored="false" />
     <file path="/.gitignore" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1380112872348" ignored="false" />
+    <file path="/show.html.erb" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1380121834988" ignored="false" />
+    <file path="/a.dummy" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1380122014551" ignored="false" />
+    <file path="/instructors.css.scss" changelist="1ab47ca5-833e-409b-b57b-55fa301a53f9" time="1380122321179" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,35 +98,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css">
+      <file leaf-file-name="_footer.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="20" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1380114862474" expanded="true" signature="1018:1130" placeholder="{...}" />
-                <marker date="1380114862474" expanded="true" signature="1301:1372" placeholder="{...}" />
-                <marker date="1380114862474" expanded="true" signature="1404:1514" placeholder="{...}" />
-                <marker date="1380114862474" expanded="true" signature="1780:1787" placeholder="{...}" />
-                <marker date="1380114862474" expanded="true" signature="2986:3078" placeholder="{...}" />
-                <marker date="1380114862474" expanded="true" signature="3045:3162" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p448/gems/less-2.4.0/lib/less/js/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="4" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
+            <state line="56" column="64" selection-start="1556" selection-end="1556" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="14" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0">
+            <state line="77" column="47" selection-start="1928" selection-end="1928" vertical-scroll-proportion="-0.06451613">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="instructors.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/instructors.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="42" selection-start="1914" selection-end="1914" vertical-scroll-proportion="-12.096774">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/instructors/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="36" selection-start="959" selection-end="964" vertical-scroll-proportion="-0.4093098">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20130921125549_create_instructors.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130921125549_create_instructors.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="23" selection-start="164" selection-end="171" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -350,16 +146,34 @@
       <file leaf-file-name="instructor.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/instructor.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="19" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
+            <state line="3" column="57" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="instructors.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/admin/instructors.rb">
+      <file leaf-file-name="admin-style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/admin-style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="8" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0">
+            <state line="13" column="19" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="34" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="2" selection-start="260" selection-end="260" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
@@ -368,34 +182,7 @@
       <file leaf-file-name="_header.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="12" selection-start="12" selection-end="29" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/instructors/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="96" selection-start="636" selection-end="636" vertical-scroll-proportion="-8.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/lessons/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="199" selection-end="199" vertical-scroll-proportion="0.089955024">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/lessons/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="9" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
+            <state line="2" column="27" selection-start="42" selection-end="53" vertical-scroll-proportion="-1.25">
               <folding />
             </state>
           </provider>
@@ -419,22 +206,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/pages/site_map.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/pages/privacy_policy.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/pages/terms_and_condition.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/pages/contact_us.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_active_admin_footer.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/admin-style.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/active_admin.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/admin/instructors.rb" />
-        <option value="$PROJECT_DIR$/app/models/instructor.rb" />
-        <option value="$PROJECT_DIR$/app/views/instructors/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
         <option value="$USER_HOME$/.rvm/gems/ruby-1.9.3-p448/gems/less-2.4.0/lib/less/js/.gitignore" />
+        <option value="$PROJECT_DIR$/app/views/instructors/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" />
+        <option value="$PROJECT_DIR$/app/models/instructor.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/admin-style.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/app/views/instructors/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/instructors.css.scss" />
       </list>
     </option>
   </component>
@@ -775,6 +562,10 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -827,8 +618,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
       <recent name="$PROJECT_DIR$/app/assets/images" />
+      <recent name="$PROJECT_DIR$/app/assets/stylesheets" />
       <recent name="$PROJECT_DIR$/app/assets/images/layout" />
     </key>
   </component>
@@ -961,6 +752,23 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1ab47ca5-833e-409b-b57b-55fa301a53f9" name="Default" comment="" />
@@ -975,9 +783,10 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32841823" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3090909" sideWeight="0.67054266" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3090909" sideWeight="0.67158175" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -986,7 +795,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1053,111 +861,108 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_active_admin_footer.html.erb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p448/gems/less-2.4.0/lib/less/js/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="28" selection-start="1666" selection-end="1666" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/admin-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="15" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130921130102_create_courses.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130921125549_create_instructors.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="48" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/active_admin.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/lesson.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="124" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+        <state line="10" column="4" selection-start="121" selection-end="121" vertical-scroll-proportion="0.2170767">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.12/lib/action_view/helpers/url_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="12" selection-start="12" selection-end="29" vertical-scroll-proportion="-0.0">
+        <state line="230" column="10" selection-start="0" selection-end="31548" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/assets/images/facebook.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="14" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0">
+        <state line="10" column="2" selection-start="260" selection-end="260" vertical-scroll-proportion="-6.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/instructors.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="8" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0">
+        <state line="2" column="34" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/instructor.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/lessons/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="9" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
+        <state line="321" column="58" selection-start="5045" selection-end="5045" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="0" selection-start="3639" selection-end="3639" vertical-scroll-proportion="0.0">
+        <state line="56" column="64" selection-start="1556" selection-end="1556" vertical-scroll-proportion="-0.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p448/gems/less-2.4.0/lib/less/js/.gitignore">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="4" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
+        <state line="2" column="27" selection-start="42" selection-end="53" vertical-scroll-proportion="-1.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/instructors/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/images/header_bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/transcript.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/instructor.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="96" selection-start="636" selection-end="636" vertical-scroll-proportion="-8.125">
+        <state line="3" column="57" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130921125549_create_instructors.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="23" selection-start="164" selection-end="171" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/admin-style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="19" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="20" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1380114862474" expanded="true" signature="1018:1130" placeholder="{...}" />
-            <marker date="1380114862474" expanded="true" signature="1301:1372" placeholder="{...}" />
-            <marker date="1380114862474" expanded="true" signature="1404:1514" placeholder="{...}" />
-            <marker date="1380114862474" expanded="true" signature="1780:1787" placeholder="{...}" />
-            <marker date="1380114862474" expanded="true" signature="2986:3078" placeholder="{...}" />
-            <marker date="1380114862474" expanded="true" signature="3045:3162" placeholder="{...}" />
-          </folding>
+        <state line="77" column="47" selection-start="1928" selection-end="1928" vertical-scroll-proportion="-0.06451613">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/lessons/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/instructors.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="199" selection-end="199" vertical-scroll-proportion="0.089955024">
+        <state line="25" column="42" selection-start="1914" selection-end="1914" vertical-scroll-proportion="-12.096774">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/instructors/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="36" selection-start="959" selection-end="964" vertical-scroll-proportion="-0.4093098">
           <folding />
         </state>
       </provider>
