@@ -3,19 +3,19 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .fashion_content_page2{border:1px solid #969696; width:704px; margin:0 auto; padding:20px 22px 14px 18px;}
-.fashion_content_page2 h2{font-family:Arial, Helvetica, sans-serif; font-size:22px; color:#000000; padding:0 0 14px; margin:0; line-height:24px;}
+.fashion_content_page2 h2{font-family:Arial, Helvetica, sans-serif; font-size:22px; color:#000000; padding:0 0 14px; margin:0; line-height:24px; text-align: left;}
 .fashion_content_page2 .p1{font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000000; padding:0 0 16px; margin:0; line-height:12px;}
 .fashion_content_page2 .p1 span{font-style:italic;}
 .fashion_content_page2 .p2{font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000; padding:0; margin:0; line-height:18px;}
 .fashion_content_page2 .imge{border:0; float:left; width: 142px; height: 150px}
 .fashion_content_page2_cnt{float:right; width:446px; padding:0 82px 0 0;}
 .videos{width:770px;}
-.videos h2{font:bold 22px Arial, Helvetica, sans-serif; color:#000;}
+.videos h2{font:bold 22px Arial, Helvetica, sans-serif; color:#000; text-align: left; margin-top: 22px;  margin-bottom: 35px;}
 .box{width:400px; margin:50px auto 0;}
 .box a{font:bold 21px Arial, Helvetica, sans-serif; color:#003471; margin:0 20px;}
 .inner-box{display:inline-block; float:right; width:550px;}
 .inner-box span{font:bold 14px Arial, Helvetica, sans-serif; color:#004a80;}
-.inner-box p{font:normal 11px Arial, Helvetica, sans-serif; color:#000;}
+.inner-box p{font:normal 11px Arial, Helvetica, sans-serif; color:#000; margin-bottom: 7px}
 .inner-box ul{margin:0; padding:0;}
 .inner-box li{display:inline-block; float:left; margin:0; padding:0 20px 0 0;}
 .inner-box ul li a{font:normal 11px Arial, Helvetica, sans-serif; color:#707070; margin:0; padding:0 0 0 23px;}
@@ -29,4 +29,19 @@
 .content_nav ul{list-style:none; display:inline-block; padding:0; margin:0;}
 .content_nav ul li{padding:0 5px; margin:0;float:left; display:inline-block;font-family:Arial, Helvetica, sans-serif; font-size:9px; color:#004a80;}
 .content_nav ul li a{ display:inline-block;color:#004a80;}
+.content_nav ul li p{ font-size: 9px; color: #000;}
 .content_nav ul li a.current{color:#000;}
+.slider{width:680px; margin:0 auto; padding:10px 0; position:relative;}
+.box4{ float:left; display:inline-block; width:170px; text-align:center;}
+.box4 a{display:inline-block; margin:0 0px;}
+.box4 p{font:normal 13px Arial, Helvetica, sans-serif; color:#004a80; margin:5px 0 0 0;}
+.box4 span{font:normal 13px Arial, Helvetica, sans-serif; color:#000; margin:0; padding:0;}
+.arrows{position:absolute; top:60px; left:-35px; margin:0; padding:0; width:750px;}
+.arrows a{margin:0; padding:0;}
+.arrows a.right{margin:0; padding:0; position:absolute; right:0; }
+.more-main {
+  border: 2px solid #000;
+  margin: 17px 0 0;
+  padding: 10px 0;
+  width: 769px;
+}

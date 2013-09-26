@@ -54,7 +54,7 @@
       <li><a href="#">Feature request</a></li>
     </ul>
   </div>
-  <div class="footer_logo"><a href="#"><img src="/assets/footer-logo.png" width="181" height="48" alt=""></a></div>
+  <div class="footer_logo"> <%= link_to (image_tag ("/assets/footer-logo.png"),:width => "181", :height => "48").html_safe, root_path %> </div>
   <div class="clear"></div>
 </div>
 <!-- footer main start-->
@@ -181,10 +181,10 @@
 <div class="copy">
   <ul>
 
-    <li class="no_margin"><a href="#">Site Map</a></li>
-    <li><a href="#">Become an Affiliate </a></li>
-    <li><a href="#">Privacy Policy </a></li>
-    <li class="no_bg"><a href="#">Terms and Conditions</a></li>
+    <li class="no_margin"><%= link_to 'Site Map',  page_path(id: 'site_map') %></li>
+    <li><%= link_to 'Become an Affiliate',  page_path(id: 'affiliate') %></li>
+    <li><%= link_to 'Privacy Policy',  page_path(id: 'privacy_policy') %></li>
+    <li class="no_bg"><%= link_to 'Terms and Condition',  page_path(id: 'terms_and_condition') %></li>
 
   </ul>
 

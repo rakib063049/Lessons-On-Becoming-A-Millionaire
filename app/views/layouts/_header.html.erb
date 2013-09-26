@@ -1,13 +1,15 @@
 
   <!-- Header Starts -->
     <div class="header_main">
-      <div class="logo"><a href="#"><img src="/assets/logo.png" width="115" height="29" alt=""></a></div>
+      <div class="logo">
+        <%= link_to (image_tag ('/assets/header-logo.png'),:width => "115", :height => "29").html_safe, root_path %>
+      </div>
 
       <div id="nav">
         <ul>
 
           <li><a href="#"><span>Subject</span></a></li>
-          <li><a href="#"><span>Instructor</span></a></li>
+          <li><span><%= link_to raw(" <span>Instructor</span> "), instructors_path %></li>
           <li><a href="#"><span>My Courses</span></a></li>
 
         </ul>
