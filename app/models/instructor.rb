@@ -5,4 +5,6 @@ class Instructor < ActiveRecord::Base
   has_and_belongs_to_many :courses
   has_many :lessons
   has_attached_file :photo, :styles => {:small => '200*180 >'}
+  validates_presence_of :title, :sub_title, :summary, :created_by
+  validates_attachment_presence :photo, :message => "please upload a photo"
 end

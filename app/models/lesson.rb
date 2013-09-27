@@ -8,6 +8,11 @@ class Lesson < ActiveRecord::Base
   belongs_to :category
   has_attached_file :photo , :styles => {:small => '150*150'}
 
+  validates_presence_of :title, :vimeo_link, :video_length, :summary, :action_steps, :transcript, :faq, :subscription
+  validates_attachment_presence :photo, :message => "Please upload one photo"
+  validates_presence_of :category_id, :message => "Please select the Category"
+  validates_presence_of :instructor_id, :message => "Please select the Instructor"
+
 =begin
   aasm do
     state :pending, :initial => true
