@@ -65,3 +65,6 @@ LessonsOnBecomingAMillionaire::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 end
+
+ENV['FB_APP_ID'] = "205507346293283"
+ENV['FB_SECRET_TOKEN'] = "2ca6956f9b4366c0b774b451b6864e9c"

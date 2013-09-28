@@ -35,3 +35,6 @@ LessonsOnBecomingAMillionaire::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 end
+
+ENV['FB_APP_ID'] = "205507346293283"
+ENV['FB_SECRET_TOKEN'] = "2ca6956f9b4366c0b774b451b6864e9c"

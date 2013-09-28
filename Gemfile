@@ -7,6 +7,8 @@ gem 'devise', '~> 2.1.2'
 gem 'devise_invitable', '~> 1.0.0'
 gem 'omniauth', '~> 1.1.1'
 gem 'devise-encryptable'
+gem 'omniauth-oauth2'
+gem 'omniauth-facebook'
 
 gem 'cancan'
 
