@@ -3,8 +3,56 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+
+.dashboard{width:765px;margin:0 auto;padding:30px 0;}
+.cnt-nav{padding:0 0 18px;}
+.cnt-nav ul{float:left;display:inline-block;margin:0;padding:0;}
+.cnt-nav ul li{float:left;display:inline-block;background:url(../images/top-nav-li-spt.png) no-repeat right 5px;padding:0 15px 0 5px;margin:0;list-style:none;}
+.cnt-nav ul li a{display:inline-block;font-family:Arial, Helvetica, sans-serif;font-size:9px;color:#000;}
+.cnt-nav ul li a:hover, .cnt-nav ul li .active{color:#004a80;}
+
+.marketing{width:735px;padding:15px 15px 18px;border:2px solid #a3a3a3;border-radius:2px;margin:0 0 35px;}
+.marketing h1{font-family:Arial, Helvetica, sans-serif;font-size:21px;color:#000;font-weight:bold;margin:0;padding:0 0 8px; text-align: left;}
+.marketing h6{font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#000;padding:0 0 22px;margin:0;}
+.marketing h6 a{font-family:Arial, Helvetica, sans-serif;font-size:16px;color:#003471;display:inline-block;}
+
+.cnt-marketing{}
+.cnt-marketing img{float:left;display:inline-block;}
+.cnt-marketing p{float:right;font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#000;width:520px;padding:15px 0 0;margin:0;line-height:20px;}
+.cnt-marketing p a{font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#003471;display:inline-block;}
+
+.subjects-like{}
+.subjects{float:left;}
+.subjects h6{font-family:Arial, Helvetica, sans-serif;font-size:11px;color:#000;font-weight:bold;margin:0;padding:0 0 5px;}
+.subjects ul{margin:0 0 45px;padding:0;display:block;}
+.subjects ul li{margin:0;padding:0 0 5px;display:block;}
+.subjects ul li a{display:block;font-family:Arial, Helvetica, sans-serif;font-size:9px;color:#003471;}
+.subjects ul li a span{display:inline-block;font-family:Arial, Helvetica, sans-serif;font-size:9px;color:#555;}
+
+.like-cnt{float:right;}
+.content-like{width:560px;padding:15px 35px 0px 20px;border:2px solid #bdbdbd;margin:0 0 32px;}
+.content-like h6{font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#000;font-weight:bold;margin:0;padding:0 0 20px;}
+.content-like ul{display:block;margin:0;padding:0 0 0 15px;}
+.content-like ul li{float:left;display:inline-block;margin:0;padding:0 0 35px 15px;}
+.content-like ul li a{display:inline-block;width:165px;text-align:center;}
+.content-like ul li a img{display:block;padding:0 0 10px;}
+.content-like ul li a span{display:block;width:165px;text-align:center;color:#004a80;font-family:Arial, Helvetica, sans-serif;font-size:13px;line-height:20px;}
+
+.cnt-profile{width:565px;padding:28px 22px 24px 20px;border:2px solid #bdbdbd;margin:15px 0 32px;}
+.cnt-profile img{float:left;}
+.profile-txt{float:right;width:410px;}
+.profile-txt h3{margin:0;font-family:Arial, Helvetica, sans-serif;color:#000;font-size:18px;padding:0 0 10px;}
+.profile-txt h6{margin:0;font-family:Arial, Helvetica, sans-serif;color:#000;font-size:11px;padding:0 0 15px;font-weight:normal;}
+.profile-txt h6 span{display:inline-block;font-family:Arial, Helvetica, sans-serif;color:#000;font-size:11px;font-style:italic;}
+.profile-txt p{margin:0;font-family:Arial, Helvetica, sans-serif;color:#000;font-size:12px;line-height:18px;padding:0 0 5px;}
+.profile-txt a{display:block;text-align:right;font-family:Arial, Helvetica, sans-serif;color:#003471;font-size:12px;}
+
+
+/*
 @charset "utf-8";
-/* CSS Document */
+*/
+/* CSS Document *//*
+
 *{
   margin:0;
   padding:0;
@@ -337,4 +385,4 @@
   color:#1b1b1b;
   font-weight: normal;
   margin-bottom:30px;
-}
+}*/

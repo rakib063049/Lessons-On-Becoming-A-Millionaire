@@ -6,15 +6,23 @@
   <%= javascript_include_tag "swfobject" ,"application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+ <body>
+    <div class="wrapper">
 
-<%= render 'layouts/header' %>
+      <div class="header">
+        <%= render 'layouts/header' %>
+      </div>
 
-<div class="main-container">
-    <%= yield %>
-</div>
 
-<%= render 'layouts/footer'%>
+      <div class="container">
+        <%= yield %>
+      </div>
 
-</body>
+      <div class="footer">
+        <%= render 'layouts/footer'%>
+      </div>
+
+    </div>
+
+ </body>
 </html>

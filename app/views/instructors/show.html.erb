@@ -1,5 +1,86 @@
 <p id="notice"><%= notice %></p>
+<div class="maincontent">
+  <div class="content_nav">
+    <ul>
+      <li><%= link_to 'Instructor', instructors_path %></li>
+      <li>&gt;&gt;</li>
+      <li ><p class="current"><%= @instructor.title %></p></li>
+
+    </ul>
+    <div class="clear"></div>
+  </div>
+
+  <div class="fashion_content_page2">
+    <%= image_tag (@instructor.photo.url(:small) ), :class => "imge" %>
+
+    <div class="fashion_content_page2_cnt"> <h2><%= @instructor.title %></h2>
+      <p class="p1"><%= @instructor.sub_title %><span></span></p>
+      <p class="p2"><%= @instructor.summary %></p>
+    </div>
+
+    <div class="clear"></div>
+
+    <a href="#"><img src="/assets/share.jpg" width="64" height="25" alt="share" align='right'></a>
+
+    <div class="clear"></div>
+
+  </div>
+
+  <div class = 'videos'>
+    <h2> <%= @instructor.lessons.count %> video(s) by <%= @instructor.title %> </h2>
+    <% @instructor.lessons.each do |lesson| %>
+        <div class="box1">
+          <%= link_to "#{image_tag (lesson.photo.url(:small)), :width => '142px', :height => '150px', :border => 0, :float => 'left' }".html_safe, lesson %>
+          <div class="inner-box">
+            <span><%= lesson.vimeo_link if lesson.present?%></span>
+            <div class ="clear"></div>
+            <p><%= lesson.summary if lesson.present?%>. </p>
+            <div class ="clear"></div>
+            <ul>
+              <li><%=link_to "#{lesson.video_length}", lesson, :class=>"icon1" if lesson.present? %></li>
+              <li><%=link_to "#{lesson.action_steps}", lesson, :class=>"icon2" if lesson.present?%></li>
+              <li><%= link_to "#{ lesson.transcript}", lesson, :class=>"icon3" if lesson.present?%></li>
+            </ul>
+            <div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+    <% end %>
+  </div>
+
+  <div class="more-main">
+    <span>More Instructors to Learn From</span>
+
+    <div class="slider">
+      <% @instructors = Instructor.all(:limit => 5)  %>
+      <% @instructors.each do |instructor|%>
+          <div class="box4">
+            <%= link_to "#{image_tag (instructor.photo.url(:small)), :width => '102px', :height => '142px' }".html_safe, instructor %>
+            <p><%= instructor.title %></p>
+            <span>Founder, Dyrdek Enterprises</span>
+          </div>
+      <% end %>
 
 
-<%= link_to 'Edit', edit_instructor_path(@instructor) %> |
-<%= link_to 'Back', instructors_path %>
+      <div class="clear"></div>
+
+      <div class="arrows">
+        <a href="#"><img src="/assets/arrow1.png" width="33" height="57" alt="arrow1"></a>
+        <a href="#" class="right"><img src="/assets/arrow2.png" width="33" height="57" alt="arrow2"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+  <div class="content_nav">
+    <ul>
+      <li><%= link_to 'Instructor', instructors_path %></li>
+      <li>&gt;&gt;</li>
+      <li><p class="current"><%= @instructor.title %></p></li>
+
+    </ul>
+    <div class="clear"></div>
+  </div>
+</div>
+<div class="clear"></div>
+
