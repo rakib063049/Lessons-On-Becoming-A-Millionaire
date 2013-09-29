@@ -1,21 +1,27 @@
-<h1>Listing instructors</h1>
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class="maincontent">
+  <div class="clear"></div>
+  <h2> Listing Instructor </h2>
+  <div class="clear"></div>
+  <br />
+  <div class="fashion_content_page2">
+    <% @instructors.each do |instructor| %>
+        <%= link_to "#{image_tag (instructor.photo.url(:small)), :width => '142px', :height => '150px', :border => 0, :float => 'left' }".html_safe, instructor %>
 
-<% @instructors.each do |instructor| %>
-  <tr>
-    <td><%= link_to 'Show', instructor %></td>
-    <td><%= link_to 'Edit', edit_instructor_path(instructor) %></td>
-    <td><%= link_to 'Destroy', instructor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
+        <div class="fashion_content_page2_cnt"> <h2><%= instructor.title %></h2>
+          <p class="p1"><%= instructor.sub_title %><span></span></p>
+          <p class="p2"><%= instructor.summary %></p>
+        </div>
 
-<br />
+        <div class="clear"></div>
 
-<%= link_to 'New Instructor', new_instructor_path %>
+        <a href="#"><img src="/assets/share.jpg" width="64" height="25" alt="share" align='right'></a>
+        <div class="clear"></div>
+        <hr />
+  <%end%>
+
+  </div>
+
+  <div class="clear"></div>
+  <br />
+</div>

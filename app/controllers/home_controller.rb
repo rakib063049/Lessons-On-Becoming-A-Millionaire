@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
+    @lessons = Lesson.all(:limit => 6)
     render :layout => 'application'
   end
   def dashboard

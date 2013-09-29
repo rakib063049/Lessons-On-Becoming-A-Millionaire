@@ -63,6 +63,10 @@
       <p>Other courses and resources give you canned info, then just leave it all up to you to figure out from there. We don’t do that. Once you complete your course, we point you in the right direction to keep learning from the best. With supplementary courses, webinars, retreats and more, we’ve got it all!</p>
     </div>
   </div>
+
+
+
+
   <div class="catagory">
     <div class="sub_catagory">
       <img src="/assets/iphone_ipad.png" alt="" />
@@ -78,34 +82,34 @@
       <img src="/assets/logo_iphone.png" alt="" class="coll_img" />
     </div>
   </div>
+
+
+
+
+
+
   <div class="catagory">
     <h2 class="text_h2">Check out some of our newest videos...</h2>
-    <div class="sub_content_div">
-      <img src="/assets/ytv.png" alt="" class="scoll" />
-      <h5 class="text_color">Manufacturing tips for tee shirt companies</h5>
+    <div class="clear"></div>
+    <div id="content-like">
+
+
+
+      <% @newest_lesson = @lessons.sort_by{|s| -s[:id]} %>
+      <ul>
+        <% @newest_lesson.each do |new_lesson| %>
+            <li>
+              <%= link_to "#{image_tag (new_lesson.photo.url(:small)), :width => '159', :height => '79', :alt => "video" }<span> #{new_lesson.title}".html_safe, new_lesson %>
+            </li>
+        <%end%>
+
+      </ul>
+      <div class="clear"> </div>
+
     </div>
-    <div class="sub_content_div">
-      <img src="/assets/ytv2.png" alt="" class="scoll" />
-      <h5 class="text_color">How much money do you need to start a clothing line?</h5>
-    </div>
-    <div class="sub_content_div">
-      <img src="/assets/ytv3.png" alt="" class="scoll" />
-      <h5 class="text_color">Selling Tee Shirts to Boutiques and Chain Stores</h5>
-    </div>
-    <div class="sub_content_div">
-      <img src="/assets/ytv4.png" alt="" class="scoll" />
-      <h5 class="text_color">Daymond John on How he Got Started</h5>
-    </div>
-    <div class="sub_content_div">
-      <img src="/assets/ytv5.png" alt="" class="scoll" />
-      <h5 class="text_color">Daymond John on How he Got Started</h5>
-    </div>
-    <div class="sub_content_div">
-      <img src="/assets/ytv5.png" alt="" class="scoll" />
-      <h5 class="text_color">Daymond John on How he Got Started</h5>
-    </div>
-    <a href="#" class="achtor">See more >></a>
-  </div>
+
+
+
   <div class="catagory">
     <h2 class="text_h2">Hear what people have been saying...</h2>
     <div class="sub_blog_text">
@@ -136,11 +140,11 @@
     </div>
   </div>
   <div class="catagory">
-    <a href="#"><img src="/assets/fb_share2.png" alt="" class="share_fb" /></a>
+    <%= link_to  image_tag('/assets/fb_share.png', :class=>'text_share_img'), user_omniauth_authorize_path(:facebook) %>
   </div>
-  <div class="catagory">
+  <div class="faq-answer">
     <h2 class="text_h2">Common Questions and Awesome Answers</h2>
-    <div class="sub_catagory">
+    <div class="sub_faq_answer">
       <h5 class="text_header_con">If I have questions, is there somebody can I talk to?</h5>
       <p class="text_paragaf_con">Yes! We offer 24/7 live chat support for our customers so you can get the answers you need, when you need them. You can also email our support team.
       </p>
@@ -156,7 +160,7 @@
         lookout!
       </p>
     </div>
-    <div class="sub_catagory">
+    <div class="sub_faq_answer">
       <h5 class="text_header_con">Are there any contracts?</h5>
       <p class="text_paragaf_con">Nope! There are no long-term contracts or commitments. Once you purchase access to a course, it's yours forever!
       </p>
@@ -171,6 +175,8 @@
     </div>
     <div class="catagory">
     </div>
+
   </div>
+    <div class = "clear"></div>
 </div>
 </div>

@@ -47,6 +47,42 @@
 .profile-txt p{margin:0;font-family:Arial, Helvetica, sans-serif;color:#000;font-size:12px;line-height:18px;padding:0 0 5px;}
 .profile-txt a{display:block;text-align:right;font-family:Arial, Helvetica, sans-serif;color:#003471;font-size:12px;}
 
+#content-like{width:560px;padding:15px 35px 0px 20px;margin:0 0 32px;}
+#content-like h6{font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#000;font-weight:bold;margin:0;padding:0 0 20px;}
+#content-like ul{display:block;margin:0;padding:0 0 0 15px;}
+#content-like ul li{float:left;display:inline-block;margin:0;padding:0 0 35px 15px;}
+#content-like ul li a{display:inline-block;width:165px;text-align:center;}
+#content-like ul li a img{display:block;padding:0 0 10px;}
+#content-like ul li a span{display:block;width:165px;text-align:center;color:#004a80;font-family:Arial, Helvetica, sans-serif;font-size:13px;line-height:20px;}
+
+.faq-answer{
+  float:left;
+  width:100%;
+  margin-top:60px;
+}
+
+.sub_faq_answer{
+  float:left;
+  width:50%;
+}
+
+.text_header_con{
+  float:left;
+  width:90%;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:16px;
+  color:#1b1b1b;
+  font-weight:bold;
+}
+.text_paragaf_con{
+  float:left;
+  width:90%;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:14px;
+  color:#1b1b1b;
+  font-weight: normal;
+  margin-bottom:30px;
+}
 
 /*
 @charset "utf-8";
@@ -369,20 +405,4 @@
   margin-left:128px;
   margin-top:30px;
 }
-.text_header_con{
-  float:left;
-  width:90%;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:16px;
-  color:#1b1b1b;
-  font-weight:bold;
-}
-.text_paragaf_con{
-  float:left;
-  width:90%;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:14px;
-  color:#1b1b1b;
-  font-weight: normal;
-  margin-bottom:30px;
-}*/
+*/
