@@ -16,15 +16,88 @@
     <li>TeahCrunch</li>
     <li>Mashable</li>
   </ul>
+
   <h5 class="text_h5">Meet your ultra-successful instructors</h5>
-  <p class="text_p">Learn to succeed from some of the most successful people in the world - step by step Learn to succeed from some of the most successful people in the world - step by step. Learn to succeed from some of the most successful people</p>
-  <h2 class="header_heading">Here's how it works</h2>
-  <div class="catagory_img">
-    <img src="/assets/catagory_img.png" alt="" />
-    <img src="/assets/catagory_img2.png" alt="" />
-    <img src="/assets/catagory_img3.png" alt="" />
-    <img src="/assets/catagory_img4.png" alt="" />
+  <p class="text_p">Each course at lesson on becoming A Millionair is taught by a group of absolute powerhouses in that industry.Not only will you know they are what they've done, but you can rest assured they know their stuff</p>
+  <div class="more-instructor">
+    <span></span>
+
+    <div class="slider">
+      <% @instructors = Instructor.all(:limit => 5)  %>
+      <% @instructors.each do |instructor|%>
+          <div class="box4">
+            <%= link_to "#{image_tag (instructor.photo.url(:small)), :width => '102px', :height => '142px' }".html_safe, instructor %>
+            <p><%= instructor.title %></p>
+            <span>Founder, Dyrdek Enterprises</span>
+          </div>
+      <% end %>
+
+
+      <div class="clear"></div>
+
+      <div class="arrows">
+        <a href="#"><img src="/assets/arrow1.png" width="33" height="57" alt="arrow1"></a>
+        <a href="#" class="right"><img src="/assets/arrow2.png" width="33" height="57" alt="arrow2"></a>
+      </div>
+    </div>
   </div>
+
+
+
+
+
+  </div>
+
+
+<div id="main-how-it-works">
+  <h2>Here's how it works</h2>
+  <div class="category_img">
+    <div class="steps"><!-- first step -->
+      <div class="step" id="step1">
+        <h3><span> 1. </span> Ignite Your Passion</h3>
+        <img src="/assets/icon10.png">
+        <div class="wrap">
+          <div class="text" style="top: -130px;">
+            <p>Let's be honest... Making money is great. But do you know what's even better? Making money doing something you absolutely love. We'll help you discover your passion to ensure everything you do from here on helps you build a life of both wealth AND happiness.</p>
+          </div>
+        </div>
+      </div>
+      <!-- first step ends --> <!-- second step -->
+      <div class="step" id="step2">
+        <h3><span> 2. </span> Choose A Course</h3>
+        <img src="/assets/icon11.png">
+        <div class="wrap">
+          <div class="text" style="top: -130px;">
+            <p>Once you've found your passion, it's time to learn how to make money from it! Not only do we offer step by step courses teaching just that, but each course is taught by people who have already made millions in that industry. When it comes to building the life you want, start here!</p>
+          </div>
+        </div>
+      </div>
+      <!-- second step ends --> <!-- third step -->
+      <div class="step" id="step3">
+        <h3><span> 3. </span> Complete The Steps</h3>
+        <img src="/assets/icon12.png">
+        <div class="wrap">
+          <div class="text" style="top: -130px;">
+            <p>So you've found your passion and you've chosen a course. Now your path is simple: follow the steps, learn the lessons we're teaching, and take action when we tell you to! When you finish, you'll have a fully-functional company you can start making money from right away!</p>
+          </div>
+        </div>
+      </div>
+      <!-- third step ends --> <!-- fourth step -->
+      <div class="step" id="step4">
+        <h3><span> 4. </span> Become A Star</h3>
+        <img src="/assets/icon13.png">
+        <div class="wrap">
+          <div class="text" style="top: -130px;">
+            <p>Now that you've learned how to make money doing something you love from the best in the business, it's time for you to keep building on it! We also offer a full line of courses teaching you to take your existing company to new levels of profitability and efficiency - fast.</p>
+          </div>
+        </div>
+      </div>
+      <!-- fourth step ends --></div>
+  </div>
+
+</div>
+
+
   <div class="catagory">
     <div class="sub_catagory">
       <h5 class="header_catagory">The roadmap ot success written by the best of the best</h5>
@@ -32,38 +105,37 @@
       </p>
     </div>
     <div class="sub_catagory">
+
       <img src="/assets/tv_img.png" alt="" class="img_catagory" />
     </div>
   </div>
-  <div class="catagory">
-    <div class="sub_catagory">
-      <img src="/assets/marque.png" alt="" class="img_catagory2" />
-    </div>
-    <div class="sub_catagory">
-      <h5 class="header_catagory2">Learn to start a successful <span>fashion</span> company from a pro</h5>
-      <p class="p_catagory2">walth the WOOS. 1Clow the onstrucCons babe 4, compkge the te0.s Soc each stop. end by the ond tho course. youl haw a tuZy.!unctorsra company you can Mai nsnkeso money from </p>
-    </div>
+  <div class="sub_catagory">
+    <h5 class="header_catagory_fashion">Learn to start a successful <span>fashion</span> company from a pro</h5>
+    <p class="p_catagory_fashion">walth the WOOS. 1Clow the onstrucCons babe 4, compkge the te0.s Soc each stop. end by the ond tho course. youl haw a tuZy.!unctorsra company you can Mai nsnkeso money from </p>
+  <img src="/assets/marque.png" alt="" class="img_catagory_tag" />
   </div>
   <div class="catagory">
-    <h2 class="header_heading">No matter how you prefer to learn, we've got you covered </h2>
-    <div class="sub_content_div">
-      <img src="/assets/content_img.png" alt="" />
-      <h5>Just Follow The Steps</h5>
-      <p>Each of our courses is presented in a rich-media, step by step format. Simply follow the steps we lay out, take action when we tell you to, and take advantage of the resources we provide you with and by the end, you’l have a fully-functional company that you built and understand!</p>
-    </div>
-    <div class="sub_content_div">
-      <img src="/assets/content_img2.png" alt="" />
-      <h5>Many Ways To Learn</h5>
-      <p>Are you one of those people who hates to read? Don’t worry, we
-        provide you with both streaming AND downloadable video to better capture your attention. Want to learn while you do other things? Our streaming and downloadable audio can help you there. Love to read? We’ve got that as well!</p>
-    </div>
-    <div class="sub_content_div">
-      <img src="/assets/content_img4.png" alt="" />
-      <h5>Don't Be Lelt Hanging</h5>
-      <p>Other courses and resources give you canned info, then just leave it all up to you to figure out from there. We don’t do that. Once you complete your course, we point you in the right direction to keep learning from the best. With supplementary courses, webinars, retreats and more, we’ve got it all!</p>
-    </div>
-  </div>
 
+  </div>
+  <div id="main-covered">
+      <h2>No matter how you learn best, we’ve got you covered</h2>
+      <div class="row">
+        <div class="col"><img src="/assets/content_img.png"> <br /> <br />
+
+          <h3>Just Follow The Steps</h3> <br />
+          <p>Each of our courses is presented in a rich-media, step by step format. Simply follow the steps we lay out, take action when we tell you to, and take advantage of the resources we provide you with and by the end, you’l have a fully-functional company that you built and understand!</p>
+        </div>
+        <div class="col"><img src="/assets/content_img2.png">  <br /> <br />
+          <h3>Many Ways To Learn</h3> <br />
+          <p>Are you one of those people who hates to read? Don’t worry, we
+            provide you with both streaming AND downloadable video to better capture your attention. Want to learn while you do other things? Our streaming and downloadable audio can help you there. Love to read? We’ve got that as well!</p>
+        </div>
+        <div class="col"><img src="/assets/content_img4.png"> <br /> <br />
+          <h3>Don’t Be Left Hanging</h3> <br />
+          <p>Other courses and resources give you canned info, then just leave it all up to you to figure out from there. We don’t do that. Once you complete your course, we point you in the right direction to keep learning from the best. With supplementary courses, webinars, retreats and more, we’ve got it all!</p>
+        </div>
+      </div>
+  </div>
 
 
 
@@ -180,3 +252,12 @@
     <div class = "clear"></div>
 </div>
 </div>
+
+<script type="text/javascript">
+
+    $(".step").hover(function() {
+        $(this).find(".text").filter(':not(:animated)').animate({"top": "28px"}, "fast");
+    }, function() {
+        $(this).find(".text").animate({"top": "-130px"}, "fast");
+    });
+</script>
