@@ -23,7 +23,7 @@
     <span></span>
 
     <div class="slider">
-      <% @instructors = Instructor.all(:limit => 5)  %>
+      <% @instructors = Instructor.all(:limit => 4)  %>
       <% @instructors.each do |instructor|%>
           <div class="box4">
             <%= link_to "#{image_tag (instructor.photo.url(:small)), :width => '102px', :height => '142px' }".html_safe, instructor %>

@@ -1,8 +1,144 @@
 <p id="notice"><%= notice %></p>
-<p>currently this video is  playing from database</p>
-<div class = 'video-show'>
-  <%#= video_player({:file => @lesson.video.url}, {:width => 680, :height => 420}) %>
+
+
+<%- model_class = Lesson -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
 </div>
 
-<%#= link_to 'Edit', edit_lesson_path(@lesson) %> |
+<div class="container2">
+  <!-- maincontent Starts -->
+  <div class="main_content">
+    <div class="content_nav">
+      <ul>
+        <li><a href="#">All Courses</a></li>
+        <li>&gt;&gt;</li>
+        <li><a href="#"> Fashion</a></li>
+        <li>&gt;&gt;</li>
+        <li><a href="#">How to Start a Clothing Line</a></li>
+        <li>&gt;&gt;</li>
+        <li><a class="current" href="#">Marketing for a Clothing Line</a></li>
+      </ul>
+      <div class="clear"></div>
+    </div>
+    <div class="diamondjohn">
+      <h2><%= @lesson.title if @lesson.title.present? %></h2>
+      <p class="p1"><%= @lesson.created_at%>&nbsp;&nbsp;&nbsp;Completed Oct 2013&nbsp;&nbsp;&nbsp;<%= @lesson.video_length %></p>
+
+      <a href="#"><img src="/assets/share.jpg" width="177" height="25" alt="share" align="right"></a>
+      <div class="clear"></div>
+    </div>
+    <div class="pop_up">
+      <a href="#"><img src="/assets/welcome_popup.jpg" width="722" height="405" alt="popup"></a>
+    </div>
+
+    <div class="scroll_div">
+      <h4>Course Curriculum</h4>
+      <ul>
+
+        <% raw (@lessons = Lesson.where('subscription = ?', "free")) %>
+
+        <% @lessons.each do |lesson| %>
+            <li><p class="title2"><%= lesson.title %></p><p class="duration2"><%= lesson.video_length %></p><div class="clear"></div></li>
+        <% end %>
+
+
+
+      </ul>
+      <div class="clear"></div>
+    </div>
+    <div class="tab_cnt">
+
+      <ul>
+        <li><a class="current" href="#tabs-1">Overview </a></li>
+        <li><a href="#tabs-2">Action Steps </a></li>
+        <li><a href="#tabs-3">Transcript</a></li>
+        <li><a class="no_bdr" href="#tabs-4">FAQ</a></li>
+      </ul>
+
+
+
+
+
+
+      <div class="clear"></div>
+      <div class="tab_container">
+
+        <div id="tabs-1">
+
+          <h5>
+            <%= @lesson.instructor.title %>  on marketing </h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <label class="subject1">Subject:</label>
+          <a href="#" class="links1">Fashion</a>
+          <a href="#" class="links1">Marketing</a>
+          <a href="#" class="links1">Clothing</a>
+          <a href="#" class="links1">Tee Shirts</a>
+          <div class="clear"></div>
+        </div>
+
+        <div id="tabs-2">
+          <label class="instructor1">Action Step :</label>
+          <a href="#" class="links1"><%= @lesson.action_steps %></a>
+          <div class="clear"></div>
+        </div>
+        <div id="tabs-3">
+          <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem.</p>
+          <p><%= @lesson.transcript %></p>
+        </div>
+        <div id="tabs-4">
+          <p>Mostofa eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem.</p>
+          <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque.</p>
+        </div>
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="suggested_videos">
+      <%@lessons = Lesson.where("title like :search ", search: "%#{@lesson.title}%", :limit => 4)%>
+
+      <h5>Suggested Videos to Watch Next</h5>
+      <ul>
+        <% @lessons.each do |lesson| %>
+
+                <li><%= link_to("#{image_tag (lesson.photo.url(:small))}".html_safe,lesson)  %><span><%= lesson.title %></span></li>
+
+
+        <% end %>
+      </ul>
+
+      <div class="clear"></div>
+    </div>
+    <div class="content_nav">
+      <ul>
+        <li><a href="#">All Courses</a></li>
+        <li>&gt;&gt;</li>
+        <li><a href="#"> Fashion</a></li>
+        <li>&gt;&gt;</li>
+        <li><a href="#">How to Start a Clothing Line</a></li>
+        <li>&gt;&gt;</li>
+        <li><a class="current" href="#">Marketing for a Clothing Line</a></li>
+      </ul>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- maincontent ends -->
+
+</div>
+
+
+<script type="text/javascript">
+    $(function() {
+        $( ".tab_cnt" ).tabs();
+    });
+</script>
+
+<%#= link_to 'Edit', edit_lesson_path(@lesson) %>
 <%#= link_to 'Back', lessons_path %>

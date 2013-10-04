@@ -3,25 +3,148 @@
   <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
 </div>
 
-<dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
-  <dd><%= @course.title %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:sub_title) %>:</strong></dt>
-  <dd><%= @course.sub_title %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:summary) %>:</strong></dt>
-  <dd><%= @course.summary %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:created_by) %>:</strong></dt>
-  <dd><%= @course.created_by %></dd>
-</dl>
+<div class="container2">
+  <!-- maincontent Starts -->
+  <div class="main_content">
+    <div class="content_nav">
+      <ul>
+        <li><a href="#">All Courses</a></li>
+        <li>&gt;&gt;</li>
+        <li><a href="#"> Fashion</a></li>
+        <li>&gt;&gt;</li>
+        <li><a href="#">How to Start a Clothing Line</a></li>
+        <li>&gt;&gt;</li>
+        <li><a class="current" href="#">Marketing for a Clothing Line</a></li>
+      </ul>
+      <div class="clear"></div>
+    </div>
+    <div class="diamondjohn">
+      <h2><%= @course.title if @course.title.present? %></h2>
+      <p class="p1"><%= @course.created_at%>&nbsp;&nbsp;&nbsp;Completed Oct 2013&nbsp;&nbsp;&nbsp;<%= @course.lessons.first.video_length %>8m 25s</p>
 
-<div class="form-actions">
-  <%= link_to t('.back', :default => t("helpers.links.back")),
-              courses_path, :class => 'btn'  %>
-  <%= link_to t('.edit', :default => t("helpers.links.edit")),
-              edit_course_path(@course), :class => 'btn' %>
-  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-              course_path(@course),
-              :method => 'delete',
-              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-              :class => 'btn btn-danger' %>
+      <a href="#"><img src="/assets/share.jpg" width="177" height="25" alt="share" align="right"></a>
+      <div class="clear"></div>
+    </div>
+    <div class="pop_up">
+      <a href="#"><img src="/assets/welcome_popup.jpg" width="722" height="405" alt="popup"></a>
+    </div>
+
+    <div class="scroll_div">
+      <h4>Course Curriculum</h4>
+      <ul>
+
+
+        <li><p class="title1"><%= @course.lessons.first.title %></p><p class="duration1"><%= @course.lessons.first.video_length %></p> <div class="clear"></div></li>
+        <li><p class="title2">Welcome</p><p class="duration2">1m 10s</p><div class="clear"></div></li>
+        <li><p class="title2">Meet Your Instructors</p><p class="duration2">1m 33s</p><div class="clear"></div></li>
+        <li class="titl"><p class="title1">1. Sample Lesson Name</p><p class="duration1">3m 10s</p> <div class="clear"></div></li>
+        <% @course.lessons.each do |sample| %>
+            <li><p class="title2"><%= sample.title %></p><p class="duration2"><%= sample.video_length %></p><div class="clear"></div></li>
+        <% end %>
+
+
+        <li class="titl"><p class="title1">1. Sample Lesson Name</p><p class="duration1">3m 10s</p> <div class="clear"></div></li>
+        <li><p class="title2">First Lesson Segment</p><p class="duration2">1m 10s</p><div class="clear"></div></li>
+        <li><p class="title2">First Lesson Segment</p><p class="duration2">2m 00s</p><div class="clear"></div></li>
+        <li><p class="title2">First Lesson Segment</p><p class="duration2">1m 10s</p><div class="clear"></div></li>
+        <li><p class="title2">First Lesson Segment</p><p class="duration2">2m 00s</p><div class="clear"></div></li>
+        <li><p class="title2">First Lesson Segment</p><p class="duration2">1m 10s</p><div class="clear"></div></li>
+        <li><p class="title2">First Lesson Segment</p><p class="duration2">2m 00s</p><div class="clear"></div></li>
+        <li><p class="title2">First Lesson Segment</p><p class="duration2">1m 10s</p><div class="clear"></div></li>
+        <li><p class="title2">First Lesson Segment</p><p class="duration2">2m 00s</p><div class="clear"></div></li>
+        <li><p class="title2">First Lesson Segment</p><p class="duration2">1m 10s</p><div class="clear"></div></li>
+      </ul>
+      <div class="clear"></div>
+    </div>
+    <div class="tab_cnt">
+
+      <ul>
+        <li><a class="current" href="#tabs-1">Overview </a></li>
+        <li><a href="#tabs-2">Action Steps </a></li>
+        <li><a href="#tabs-3">Transcript</a></li>
+        <li><a class="no_bdr" href="#tabs-4">FAQ</a></li>
+      </ul>
+
+
+
+
+
+
+      <div class="clear"></div>
+      <div class="tab_container">
+
+        <div id="tabs-1">
+
+          <h5>
+                <%= @course.instructors.first.title %>  on marketing </h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <label class="subject1">Subject:</label>
+          <a href="#" class="links1">Fashion</a>
+          <a href="#" class="links1">Marketing</a>
+          <a href="#" class="links1">Clothing</a>
+          <a href="#" class="links1">Tee Shirts</a>
+          <div class="clear"></div>
+        </div>
+
+        <div id="tabs-2">
+          <label class="instructor1">Action Step :</label>
+          <a href="#" class="links1"><%= @course.lessons.first.action_steps %></a>
+          <div class="clear"></div>
+        </div>
+        <div id="tabs-3">
+          <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem.</p>
+          <p><%= @course.lessons.first.transcript %></p>
+        </div>
+        <div id="tabs-4">
+          <p>Mostofa eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem.</p>
+          <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque.</p>
+        </div>
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="suggested_videos">
+      <%@courses = Course.where("title like :search ", search: "%#{@course.title}%", :limit => 4)%>
+
+      <h5>Suggested Videos to Watch Next</h5>
+      <ul>
+        <% @courses.each do |course| %>
+            <% course.lessons.each do |lesson| %>
+                <li><%= link_to("#{image_tag (lesson.photo.url(:small))}".html_safe,lesson)  %><span><%= lesson.title %></span></li>
+            <% end %>
+
+        <% end %>
+      </ul>
+
+      <div class="clear"></div>
+    </div>
+    <div class="content_nav">
+      <ul>
+        <li><a href="#">All Courses</a></li>
+        <li>&gt;&gt;</li>
+        <li><a href="#"> Fashion</a></li>
+        <li>&gt;&gt;</li>
+        <li><a href="#">How to Start a Clothing Line</a></li>
+        <li>&gt;&gt;</li>
+        <li><a class="current" href="#">Marketing for a Clothing Line</a></li>
+      </ul>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- maincontent ends -->
+
 </div>
+
+
+<script type="text/javascript">
+    $(function() {
+        $( ".tab_cnt" ).tabs();
+    });
+</script>
