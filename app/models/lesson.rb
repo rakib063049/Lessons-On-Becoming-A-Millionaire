@@ -2,8 +2,8 @@ class Lesson < ActiveRecord::Base
   #include AASM
 
   attr_accessible :title, :vimeo_link, :video_length, :summary, :action_steps, :transcript, :faq, :subscription, :photo, :category_id, :instructor_id
-
-  has_and_belongs_to_many :courses
+  has_many :course_lessons
+  has_many :courses, :through => :course_lessons
   belongs_to :instructor
   belongs_to :category
   has_attached_file :photo , :styles => {:small => '150*150'}
