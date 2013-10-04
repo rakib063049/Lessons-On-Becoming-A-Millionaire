@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130928193654) do
+ActiveRecord::Schema.define(:version => 20131004175615) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -73,6 +73,13 @@ ActiveRecord::Schema.define(:version => 20130928193654) do
   end
 
   add_index "categories_courses", ["course_id", "category_id"], :name => "index_categories_courses_on_course_id_and_category_id"
+
+  create_table "category_courses", :force => true do |t|
+    t.integer  "category_id"
+    t.integer  "course_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "courses", :force => true do |t|
     t.string   "title"

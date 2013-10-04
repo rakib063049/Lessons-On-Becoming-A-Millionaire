@@ -1,0 +1,23 @@
+body.active_admin {
+  .category-input {
+    font: bold 21px Arial, Helvetica, sans-serif;
+    color: #003471;
+    margin: 0 0px 0 15px;
+    margin-left: 174px;
+  }
+  .category-input li {
+    width: 63%;
+  }
+   .category-label {
+    display: block;
+    width: 100px;
+    float: left;
+    font-size: 1.0em;
+    font-weight: bold;
+    color: #5e6469;
+  }
+  .add{
+    margin-top: -12px;
+    margin-bottom: 11px;
+  }
+}
