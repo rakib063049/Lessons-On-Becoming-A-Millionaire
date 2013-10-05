@@ -19,6 +19,8 @@
           <div class="add"><%= f.link_to_add "Add a category", :category_courses %></div>
         </div>
 
+        <%= f.input :photo, :wrapper_html => {:style => 'width: 56%'} %>
+
         <!--<li class="string input required stringish" id="course_instructor_input"><p class="category-label">Instructor</p></li>
 
         <div class="category-input">
@@ -29,6 +31,7 @@
           <div class="add"><%= f.link_to_add "Add a instructor", :course_instructors %></div>
         </div>
 -->
+        <%= f.input :chapter, :wrapper_html => {:style => 'width: 56%'} %>
 
         <li class="string input required stringish" id="course_lessons_input"><p class="category-label">Lesson</p></li>
 

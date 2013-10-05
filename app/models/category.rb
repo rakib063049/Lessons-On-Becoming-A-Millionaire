@@ -4,5 +4,5 @@ class Category < ActiveRecord::Base
   has_many :lessons
   has_many :category_courses
   has_many :courses, :through => :category_courses
-  validates_presence_of :title, :sub_title, :courses
+  validates_presence_of :title, :sub_title
 end
