@@ -128,3 +128,56 @@ body {
 .member_login .form_div  label{display:inline-block; float:left; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#7a7a7a; font-weight:bold; padding:16px 0 0 0; margin-top: -7px;}
 .member_login .form_div .chk_box{float:left; border:0;  margin:16px 15px 0 16px; display:block;}
 .member_login .form_div .login{background:url(/assets/grad_bg4.jpg) repeat-x; width:128px; text-align:center; display:inline-block; float:right; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; font-weight:bold; padding:11px 0; margin:0 20px 0 0; border:1px solid #d5920d; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px;}
+
+
+/*-------------home page --------------*/
+.video_share{
+    float:left;
+    width:110%;
+    margin-top: 35px;
+}
+.text_share{
+    float:left;
+    width:468px;
+}
+.text_share_P{
+    float:left;
+    width:404px;
+    margin-left: 5px;
+    margin-top:40px;
+    margin-bottom: 34px;
+    text-align:left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:19px;
+}
+
+
+.list_text{
+    float:left;
+    width:78%;
+    margin-left:22%;
+    margin-top:26px;
+}
+
+.text_item_p{
+    float:left;
+    width:100%;
+    text-indent:96px;
+}
+
+.list_text li{
+    float: left;
+    width:100%;
+    font-size:16px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#000;
+    line-height:24px;
+}
+
+.video{
+    float:left;
+    width:468px;
+}
+.video iframe{
+    float:left;
+}
