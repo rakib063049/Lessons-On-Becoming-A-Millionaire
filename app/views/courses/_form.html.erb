@@ -21,7 +21,7 @@
         <li class="string input required stringish" id="course_lessons_input"><p class="category-label">Lesson</p></li>
         <div class="category-input">
           <%= f.semantic_fields_for :course_lessons do |lesson| %>
-              <li class="select input required" ><%= lesson.collection_select(:lesson_id, Lesson.all, :id, :title, :multiple => true, :prompt => "Please select the category", :label => "Category",  :class => 'my-custom-class', :wrapper_html => {:style => 'width: 56%', :class =>'select-category'}) %>
+              <li class="select input required" ><%= lesson.collection_select(:lesson_id, Lesson.all, :id, :title, :multiple => true, :prompt => "Please select the lesson", :label => "Category",  :class => 'my-custom-class', :wrapper_html => {:style => 'width: 56%', :class =>'select-category'}) %>
                 <%= lesson.link_to_remove "Remove this category" %></li>
           <% end %>
           <div class="add"><%= f.link_to_add "Add a lesson", :course_lessons %></div>
