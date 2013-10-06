@@ -66,24 +66,11 @@
         <li>
           <p> Instructors</p>
         </li>
-        <li> <a href="#">Daymond John</a></li>
-        <li> <a href="#">Dan Caldwell</a></li>
-        <li> <a href="#">Andrea Lake</a></li>
-        <li> <a href="#">Emerson Spartz </a></li>
-        <li> <a href="#">Seth Kravitz </a></li>
-        <li> <a href="#">Jake Nickell </a></li>
-        <li> <a href="#">Travis Steffen</a></li>
-        <li> <a href="#">Cary Chessick </a></li>
-        <li> <a href="#">Jackie Warner </a></li>
-        <li> <a href="#">Joe Huff</a></li>
-        <li> <a href="#">Alex Bard </a></li>
-        <li> <a href="#">Jesse Jaymes </a></li>
-        <li> <a href="#">Chance Barnett </a></li>
-        <li> <a href="#">Kristin Knight</a></li>
-        <li> <a href="#">Micah Baldwin</a></li>
-        <li> <a href="#">Jonathan Teo</a></li>
-        <li> <a href="#">Mike Del Ponte</a></li>
-        <li> <a href="#">Dario Meli</a></li>
+        <% @instructors = Instructor.all(:limit => 15, :order => "id DESC") %>
+          <% @instructors.each do |instructor| %>
+              <li><%= link_to "#{instructor.title}", instructor %></li>
+          <% end %>
+
       </ul>
     </div>
     <div class="block">
@@ -91,13 +78,11 @@
         <li>
           <p>Technology </p>
         </li>
-        <li> <a href="#">Websites</a></li>
-        <li> <a href="#">Mobile Apps</a></li>
-        <li> <a href="#">Info Products </a></li>
-        <li> <a href="#">Online Marketing</a></li>
-        <li> <a href="#">Social Media</a></li>
-        <li> <a href="#">Info Products </a></li>
-        <li> <a href="#">E-Commerce</a></li>
+        <% @lessons = Lesson.where("title like :search", :search => "%#{'technology'}%", :limit => 5) %>
+        <% @lessons.each do |lesson| %>
+            <li><%= link_to "#{lesson.title}", lesson %></li>
+        <% end %>
+
       </ul>
     </div>
     <div class="block">
