@@ -70,15 +70,19 @@
 
         <div id="tabs-1">
           <% @course.lessons.each do |lesson| %>
+              <% lesson.instructors.each do |instructor| %>
               <h5>
-                <%= lesson.instructor.title %> on <%= lesson.category.title %> </h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <label class="subject1">Subject:</label>
-              <a href="#" class="links1">Fashion</a>
-              <a href="#" class="links1">Marketing</a>
-              <a href="#" class="links1">Clothing</a>
-              <a href="#" class="links1">Tee Shirts</a>
-              <div class="clear"></div>
+                  <%= instructor.title %>  <%#= lesson.category.title %>
+              </h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <label class="subject1">Subject:</label>
+                  <a href="#" class="links1">Fashion</a>
+                  <a href="#" class="links1">Marketing</a>
+                  <a href="#" class="links1">Clothing</a>
+                  <a href="#" class="links1">Tee Shirts</a>
+
+                  <div class="clear"></div>
+              <% end %>
           <% end %>
 
         </div>

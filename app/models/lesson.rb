@@ -1,18 +1,22 @@
 class Lesson < ActiveRecord::Base
   #include AASM
 
-  attr_accessible :title, :vimeo_link, :video_length, :summary, :action_steps, :transcript, :faq, :subscription, :photo, :category_id, :instructor_id
+  attr_accessible :title, :vimeo_link, :video_length, :summary, :action_steps, :transcript, :faq, :subscription, :photo, :category_id, :instructor_lessons_attributes, :category_lessons_attributes
   has_many :course_lessons
   has_many :courses, :through => :course_lessons
-  belongs_to :instructor
-  belongs_to :category
+  has_many :instructor_lessons
+  has_many :category_lessons
+  has_many :instructors, :through => :instructor_lessons
+  has_many :categories, :through => :category_lessons
   has_attached_file :photo , :styles => {:small => '150*150'}
 
   validates_presence_of :title, :vimeo_link, :video_length, :summary, :action_steps, :transcript, :faq, :subscription
   validates_attachment_presence :photo, :message => "Please upload one photo"
-  validates_presence_of :category_id, :message => "Please select the Category"
-  validates_presence_of :instructor_id, :message => "Please select the Instructor"
+  #validates_presence_of :category_id, :message => "Please select the Category"
+  #validates_presence_of :instructor_id, :message => "Please select the Instructor"
 
+  accepts_nested_attributes_for :instructor_lessons, :allow_destroy => true
+  accepts_nested_attributes_for :category_lessons, :allow_destroy => true
 =begin
   aasm do
     state :pending, :initial => true

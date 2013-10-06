@@ -171,7 +171,7 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
 
 .pop_up{width:722px; margin:0 auto; padding:10px 0;}
 .pop_up img{border:0;}
-.scroll_div{width:260px; min-height:410px; padding:20px 10px 0 0; border:1px solid #acacac;float:left;}
+.scroll_div{width:260px; min-height:410px; padding:20px 10px 0 0; border:1px solid #acacac;float:left; margin-left: -7px}
 .scroll_div h4{font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000000; padding:0; margin:0; text-align:center;}
 .scroll_div ul{list-style:none; display:block; padding:18px 0 0 0; margin:0;}
 .scroll_div ul li{padding:0 0 8px 25px; margin:0; display:block;}
@@ -180,13 +180,13 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
 .scroll_div ul li .duration1{font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#000000; font-weight:bold; float:right;padding:0; margin:0;}
 .scroll_div ul li .title2{font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#004a80;  float:left;padding:0; margin:0;}
 .scroll_div ul li .duration2{font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#000; float:right;padding:0; margin:0;}
-.tab_cnt{border:1px solid #acacac; float:right;}
+.tab_cnt{border:1px solid #acacac; float:right; overflow: scroll; height: 520px;overflow-x: hidden;}
 .tab_cnt ul{list-style:none; padding:0; margin:0; display:inline-block; background:url(/assets/grad_bg2.jpg) repeat-x;}
 .tab_cnt ul li{display:inline-block; float:left; padding:0; margin:0; border-bottom:1px solid #cccccc;}
 .tab_cnt ul li a{display:inline-block; width:108px; text-align:center; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000000; border-right:1px solid #c9c9c9; padding:12px 0;}
 .no_bdr{border:0 !important;}
 .tab_cnt ul li a.current{background:#ffffff;}
-.tab_container{width:380px; margin:0 auto; padding:30px 0 0 0; min-height:400px;}
+.tab_container{width:380px; margin:0 auto; padding:30px 0 0 0; min-height:400px;overflow: auto;}
 .tab_container h5{font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; padding:0 0 6px; margin:0;}
 .tab_container p{font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#000; padding:0 0 18px; margin:0; line-height:20px;}
 .tab_container .subject1{display:inline-block; float:left; font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#000; padding:0 8px 8px 0;}
