@@ -66,5 +66,5 @@ LessonsOnBecomingAMillionaire::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 end
 
-ENV['FB_APP_ID'] = "205507346293283"
-ENV['FB_SECRET_TOKEN'] = "2ca6956f9b4366c0b774b451b6864e9c"
+ENV['FB_APP_ID'] = "238953272926868"
+ENV['FB_SECRET_TOKEN'] = "aa4f6994491f8acda0b5fa3ac6b5f998"
