@@ -10,7 +10,6 @@
 
 
         <li class="string input required stringish" id="category_courses_input"><p class="category-label">Category</p></li>
-
         <div class="category-input">
           <%= f.semantic_fields_for :category_courses do |category| %>
               <li class="select input required" ><%= category.collection_select(:category_id, Category.all, :id, :title, :multiple => true, :prompt => "Please select the category", :label => "Category",  :class => 'my-custom-class', :wrapper_html => {:style => 'width: 56%', :class =>'select-category'}) %>
@@ -19,7 +18,14 @@
           <div class="add"><%= f.link_to_add "Add a category", :category_courses %></div>
         </div>
 
-        <%= f.input :photo, :wrapper_html => {:style => 'width: 56%'} %>
+        <li class="string input required stringish" id="course_lessons_input"><p class="category-label">Lesson</p></li>
+        <div class="category-input">
+          <%= f.semantic_fields_for :course_lessons do |lesson| %>
+              <li class="select input required" ><%= lesson.collection_select(:lesson_id, Lesson.all, :id, :title, :multiple => true, :prompt => "Please select the category", :label => "Category",  :class => 'my-custom-class', :wrapper_html => {:style => 'width: 56%', :class =>'select-category'}) %>
+                <%= lesson.link_to_remove "Remove this category" %></li>
+          <% end %>
+          <div class="add"><%= f.link_to_add "Add a lesson", :course_lessons %></div>
+        </div>
 
         <!--<li class="string input required stringish" id="course_instructor_input"><p class="category-label">Instructor</p></li>
 
@@ -32,16 +38,7 @@
         </div>
 -->
         <%= f.input :chapter, :wrapper_html => {:style => 'width: 56%'} %>
-
-        <li class="string input required stringish" id="course_lessons_input"><p class="category-label">Lesson</p></li>
-
-        <div class="category-input">
-          <%= f.semantic_fields_for :course_lessons do |lesson| %>
-              <li class="select input required" ><%= lesson.collection_select(:lesson_id, Lesson.all, :id, :title, :multiple => true, :prompt => "Please select the category", :label => "Category",  :class => 'my-custom-class', :wrapper_html => {:style => 'width: 56%', :class =>'select-category'}) %>
-              <%= lesson.link_to_remove "Remove this category" %></li>
-          <% end %>
-          <div class="add"><%= f.link_to_add "Add a lesson", :course_lessons %></div>
-        </div>
+        <%= f.input :photo, :wrapper_html => {:style => 'width: 56%'} %>
 
 
 
