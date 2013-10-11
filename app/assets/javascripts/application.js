@@ -12,6 +12,9 @@
 //
 //= require jquery
 //= require swfobject
+//= require jquery.jcarousel.min.js
+
 //= require jquery_ujs
+//= require base
 //= require jquery_nested_form
 //= require_tree .

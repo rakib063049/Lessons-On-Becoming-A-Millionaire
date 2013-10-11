@@ -2,9 +2,11 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable, :omniauthable
 
   attr_accessible :first_name, :last_name, :email, :password, :password_confirmation, :remember_me, :lesson_viewed,
-                  :uid, :provider, :auth_token, :auth_expired_at
+                  :uid, :provider, :auth_token, :auth_expired_at, :role_ids
 
   has_many :authentications
+  has_and_belongs_to_many :roles
+  before_save :setup_role
 
   def full_name
     [self.first_name+" "+self.last_name].join rescue ""
@@ -33,5 +35,17 @@ class User < ActiveRecord::Base
   end
 
 
+
+
+  def role?(role)
+    return !!self.roles.find_by_name(role.to_s.camelize)
+  end
+
+  # Default role is "Registered"
+  def setup_role
+    if self.role_ids.empty?
+      self.role_ids = [2]
+    end
+  end
 end
 
