@@ -11,10 +11,12 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require jquery-1.9.1.min
 //= require swfobject
-//= require jquery.jcarousel.min.js
+
 
 //= require jquery_ujs
 //= require base
+//= require jquery.jcarousel.js
 //= require jquery_nested_form
 //= require_tree .

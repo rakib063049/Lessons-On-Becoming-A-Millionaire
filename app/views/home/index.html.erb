@@ -1,6 +1,6 @@
 <p></p>
 <!-- main content begins -->
-<div id="main" class="container">
+<div id="main" class="container">    <br />
 <div id="main-header">
   <h1>Learn to succeed from some of the most<br /> successful people in the world - step by step</h1>
 </div>
@@ -40,13 +40,7 @@
   </div>
   <p>(Scroll through, or click to see details)</p>
 </div>
-<script type="text/javascript">// <![CDATA[
-$(function(){
-    $('#carousel').jcarousel({
-        wrap: 'circular'
-    });
-});
-// ]]></script>
+
 <div id="main-how-it-works">
   <h2>Here's how it works</h2>
   <div class="steps"><!-- first step -->
@@ -514,10 +508,19 @@ $(function(){
 <div id = "placeholder"></div>
 
 <script type="text/javascript">
+   $(document).ready(function(){
+       $(".step").hover(function() {
+           $(this).find(".text").filter(':not(:animated)').animate({"top": "28px"}, "fast");
+       }, function() {
+           $(this).find(".text").animate({"top": "-130px"}, "fast");
+       });
 
-    $(".step").hover(function() {
-        $(this).find(".text").filter(':not(:animated)').animate({"top": "28px"}, "fast");
-    }, function() {
-        $(this).find(".text").animate({"top": "-130px"}, "fast");
-    });
+
+       $('#carousel').jcarousel({
+           wrap: 'circular'
+       });
+
+   });
+
+
 </script>
