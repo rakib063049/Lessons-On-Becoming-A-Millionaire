@@ -11,13 +11,12 @@
   <div class="main_content">
     <div class="content_nav">
       <ul>
-        <li><%= link_to "All Courses", courses_path %></li>
+        <li><%= link_to "All courses", courses_path %></li>
         <li>&gt;&gt;</li>
-
-        <li><%= link_to "#{@lesson.courses.present? ?  (@lesson.courses.first.title) : 'no course' }",  @lesson.courses.first  %></li>
+        <li><%= link_to "#{@lesson.categories.first.title}".html_safe, @lesson.categories.first %></li>
         <li>&gt;&gt;</li>
-        <li><%#= link_to "#{@lesson.courses.present? ?  (@lesson.courses.first.title) : 'no course'}".html_safe, @lesson.courses.last if @lesson.courses.last.present? || 'No course ' %></li>
-
+        <li><%= link_to "#{@lesson.categories.first.sub_categories.first.title}", @lesson.categories.first.sub_categories.first %></li>
+        <li>&gt;&gt;</li>
         <li><%= @lesson.title %></li>
       </ul>
       <div class="clear"></div>
@@ -25,13 +24,17 @@
 
     <div class="diamondjohn">
       <h2><%= @lesson.title if @lesson.title.present? %></h2>
-      <p class="p1"><%= @lesson.created_at%>&nbsp;&nbsp;&nbsp;Completed Oct 2013&nbsp;&nbsp;&nbsp;<%= @lesson.video_length %></p>
+      <p class="p1"><%= @lesson.created_at%>&nbsp;&nbsp;&nbsp;Completed <%= (@lesson.created_at).strftime('%b %d %Y') %>&nbsp;&nbsp;&nbsp;<%= @lesson.video_length %></p>
 
       <a href="#"><img src="/assets/share.jpg" width="177" height="25" alt="share" align="right"></a>
       <div class="clear"></div>
     </div>
     <div class="pop_up">
-      <a href="#"><%= image_tag @lesson.photo.url, :width=>"722", :height=>"405" %></a>
+      <% if @lesson.subscription == "Free" %>
+        <iframe width="725" height="480" src="<%= "#{@lesson.vimeo_link}" %>" frameborder="0" allowfullscreen=""></iframe>
+      <% else %>
+        <%= flash[:notice ]= "you need premium account to see this video" %>
+      <% end %>
     </div>
 
     <div class="scroll_div">
@@ -41,7 +44,7 @@
         <% raw (@lessons = Lesson.where('subscription = ?', "free")) %>
 
         <% @lessons.each do |lesson| %>
-            <li><p class="title2"><%= lesson.title %></p><p class="duration2"><%= lesson.video_length %></p><div class="clear"></div></li>
+            <li><p class="title2"><%= link_to "#{lesson.title}", lesson, :class => "title2" %></p><p class="duration2"><%= lesson.video_length %></p><div class="clear"></div></li>
         <% end %>
 
 
@@ -52,7 +55,7 @@
     <div class="tab_cnt">
 
       <ul>
-        <li><a class="current" href="#tabs-1">Overview </a></li>
+        <li><a href="#tabs-1">Overview </a></li>
         <li><a href="#tabs-2">Action Steps </a></li>
         <li><a href="#tabs-3">Transcript</a></li>
         <li><a class="no_bdr" href="#tabs-4">FAQ</a></li>

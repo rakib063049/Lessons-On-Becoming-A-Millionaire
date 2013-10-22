@@ -8,8 +8,29 @@
       <div id="nav">
         <ul>
 
-          <li><a href="#"><span>Subject</span></a></li>
-          <li><%= link_to raw(" <span>Instructor</span> "), instructors_path %></li>
+          <li><a href="#"><span>Subject</span></a>
+            <ul>
+              <% @subjects = Category.all(:order => "id DESC") %>
+              <% @subjects.each do |subject| %>
+                  <li>
+                    <%= link_to raw(" #{subject.title} "), subject %>
+                  </li>
+              <% end %>
+
+            </ul>
+          </li>
+          <li> <a href="#"><span>instructor</span></a>
+            <ul>
+            <% @instructors = Instructor.all(:order => "id DESC") %>
+              <% @instructors.each do |instructor| %>
+                  <li>
+                    <%= link_to raw(" #{instructor.title} "), instructor %>
+                  </li>
+              <% end %>
+
+            </ul>
+          </li>
+
           <li><a href="#"><span>My Courses</span></a></li>
 
         </ul>
