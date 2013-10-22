@@ -26,7 +26,7 @@
       <h2><%= @lesson.title if @lesson.title.present? %></h2>
       <p class="p1"><%= @lesson.created_at%>&nbsp;&nbsp;&nbsp;Completed <%= (@lesson.created_at).strftime('%b %d %Y') %>&nbsp;&nbsp;&nbsp;<%= @lesson.video_length %></p>
 
-      <a href="#"><img src="/assets/share.jpg" width="177" height="25" alt="share" align="right"></a>
+      <a href="#"><img src="/assets/share.jpg" width="95" height="28" alt="share" align="right"></a>
       <div class="clear"></div>
     </div>
     <div class="pop_up">
@@ -42,9 +42,12 @@
       <ul>
 
         <% raw (@lessons = Lesson.where('subscription = ?', "free")) %>
-
-        <% @lessons.each do |lesson| %>
-            <li><p class="title2"><%= link_to "#{lesson.title}", lesson, :class => "title2" %></p><p class="duration2"><%= lesson.video_length %></p><div class="clear"></div></li>
+        <% if @lessons.present? %>
+            <% @lessons.each do |lesson| %>
+                <li><p class="title2"><%= link_to "#{lesson.title}", lesson, :class => "title2" %></p><p class="duration2"><%= lesson.video_length %></p><div class="clear"></div></li>
+            <% end %>
+        <% else %>
+        <p> There is no other lessons </p>
         <% end %>
 
 
