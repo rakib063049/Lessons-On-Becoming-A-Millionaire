@@ -17,7 +17,7 @@
     </div>
     <div class="diamondjohn">
       <h2><%= @course.title if @course.title.present? %></h2>
-      <p class="p1">Uploaded <%= (@course.created_at).strftime('%b %Y') %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Completed <%= (Time.now).strftime('%b %Y') %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @course.lessons.first.video_length %></p>
+      <p class="p1">Uploaded <%= (@course.created_at).strftime('%b %Y') %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Completed <%= (Time.now).strftime('%b %Y') %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @course.lessons.first.video_length + "s" %></p>
 
       <a href="#"><img src="/assets/share.jpg" width="95" height="25" alt="share" align="right"></a>
       <div class="clear"></div>
