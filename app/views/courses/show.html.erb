@@ -23,7 +23,9 @@
       <div class="clear"></div>
     </div>
     <div class="pop_up">
-      <a href="#"><%= image_tag @course.photo.url, :width=>"722", :height=>"405" %></a>
+
+      <iframe width="725" height="480" src="<%= "#{@course.lessons.first.vimeo_link}" %>" frameborder="0" allowfullscreen=""></iframe>
+
     </div>
 
     <div class="scroll_div">
