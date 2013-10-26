@@ -56,7 +56,7 @@
       <% @instructors = Instructor.all(:limit => 5)  %>
       <% @instructors.each do |instructor|%>
           <div class="box4">
-            <%= link_to "#{image_tag (instructor.photo.url(:small)), :width => '102px', :height => '142px' }".html_safe, instructor %>
+            <%= link_to "#{image_tag (instructor.photo.url), :width => '102px', :height => '142px' }".html_safe, instructor %>
             <p><%= instructor.title %></p>
             <span>Founder, Dyrdek Enterprises</span>
           </div>
