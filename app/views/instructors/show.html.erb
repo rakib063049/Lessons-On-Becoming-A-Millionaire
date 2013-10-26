@@ -38,8 +38,8 @@
             <div class ="clear"></div>
             <ul>
               <li><%=link_to "#{lesson.video_length}", lesson, :class=>"icon1" if lesson.present? %></li>
-              <li><%=link_to "#{lesson.action_steps}", lesson, :class=>"icon2" if lesson.present?%></li>
-              <li><%= link_to "#{ lesson.transcript}", lesson, :class=>"icon3" if lesson.present?%></li>
+              <li><%=link_to "#{lesson.action_steps}", lesson, :class=>"icon2" if lesson.subscription == "Premium" && "Free" %></li>
+              <li><%= link_to "#{ lesson.transcript}", lesson, :class=>"icon3" if lesson.subscription =="Premium" && "Free" %></li>
             </ul>
             <div class="clear"></div>
           </div>

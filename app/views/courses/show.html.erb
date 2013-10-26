@@ -17,7 +17,14 @@
     </div>
     <div class="diamondjohn">
       <h2><%= @course.title if @course.title.present? %></h2>
-      <p class="p1">Uploaded <%= (@course.created_at).strftime('%b %Y') %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Completed <%= (Time.now).strftime('%b %Y') %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @course.lessons.first.video_length + "s" %></p>
+      <p class="p1">Uploaded on <%= (@course.created_at).strftime('%b %Y') %> <%#= (Time.now).strftime('%b %Y') %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <% tot = 0.0 %>
+        <% @course.lessons.each do |lesson| %>
+            <% lenght = lesson.video_length.to_f %>
+            <% tot = tot +lenght %>
+            <% demo = lenght %>
+        <% end %>
+        <%= tot.to_s + "s" %></p>
 
       <a href="#"><img src="/assets/share.jpg" width="95" height="25" alt="share" align="right"></a>
       <div class="clear"></div>
@@ -57,9 +64,9 @@
       <div class="clear"></div>
       <div class="tab_container" id="tabs-1">
                <h5>
-                  <%= @course.lessons.first.instructors.first.title %>  <%#= lesson.category.title %>
+                  <%= @course.lessons.first.title %>  <%#= lesson.category.title %>
                 </h5>
-                <p><%= @course.lessons.first.instructors.first.summary %></p>
+                <p><%= @course.lessons.first.summary %></p>
                 <label class="subject1">Subject:</label>
                 <% @course.categories.each do |category| %>
                     <%= link_to "#{category.title}", category, :class => "links1" %>
@@ -71,8 +78,7 @@
       </div>
 
       <div class="tab_container" id="tabs-2">
-        <label class="instructor1">Action Step :</label>
-        <%= link_to "#{@course.lessons.first.action_steps}",  @course.lessons.first %>
+        <p><%=  @course.lessons.first.action_steps %></p>
         <div class="clear"></div>
       </div>
 

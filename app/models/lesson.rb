@@ -1,7 +1,8 @@
 class Lesson < ActiveRecord::Base
   #include AASM
-
+  extend FriendlyId
   attr_accessible :title, :vimeo_link, :video_length, :summary, :action_steps, :transcript, :faq, :subscription, :photo, :category_id, :instructor_lessons_attributes, :category_lessons_attributes
+  friendly_id :title, use: :slugged
   has_many :course_lessons
   has_many :courses, :through => :course_lessons
   has_many :instructor_lessons
