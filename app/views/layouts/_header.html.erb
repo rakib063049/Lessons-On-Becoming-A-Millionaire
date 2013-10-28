@@ -6,7 +6,7 @@
       </div>
 
       <div id="nav">
-        <ul>
+        <ul id="menu">
 
           <li><a href="#"><span>Subject</span></a>
             <ul>
@@ -19,7 +19,8 @@
 
             </ul>
           </li>
-          <li> <a href="#"><span>instructors</span></a>
+
+          <li> <a href="#"><span>Instructors</span></a>
             <ul>
             <% @instructors = Instructor.all(:order => "id DESC") %>
               <% @instructors.each do |instructor| %>
@@ -34,6 +35,7 @@
           <li><a href="#"><span>My Courses</span></a></li>
 
         </ul>
+        <div id="navs"></div>
         <div class="clear"></div>
       </div>
 

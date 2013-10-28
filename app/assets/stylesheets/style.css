@@ -63,14 +63,15 @@ body {
     background:url(/assets/header_bg.png) repeat-x; border-top:#8d8d8d 1px solid; border-bottom:#ffb72e 3px solid; margin:12px 0 0 0;
 }
 .header_main {
-    width:745px; margin:0 auto;
+    width:790px; margin:0 auto;
     margin-bottom: -5px;
+    height: 45px;
 }
 
 
 /* ------------------ HEADER HERE -------------------*/
 .logo										{ padding:6px 22px 3px 0; float:left;}
-.header_right                               {float:right; padding:18px 0 0 0;}
+.header_right                               {float:right; padding:18px 0 0 0; }
 .header_right ul                            {float:left; display:inline-block; list-style:none; padding:0; margin:0;}
 .header_right ul li                         {float:left; display:inline-block; background:url(/assets/header-right_li.png) no-repeat center right; margin:0 0 0 12px; padding:0;}
 .header_right ul li a                       {font-family:"Arial", Verdana, Tahoma; font-size:11px; color:#ffffff; margin:0 11px 0 0; display:inline-block;}
@@ -79,102 +80,147 @@ body {
 
 
 /* ------------------------- NAVIGATION HERE ---------------*/
-#nav										{ float:left; padding:2px 0 4px 0; background:url(/assets/nav_li.png) no-repeat right center;  display: block;}
+#navs										{ float:left; padding:2px 0 4px 0; background:url(/assets/nav_li.png) no-repeat right center;  display: block;}
+#nav										{ float:left;  display: block;}
 #nav ul										{ float:left; display:inline-block; list-style:none; padding:0; margin:0;}
-#nav ul li									{float:left; display:inline-block; margin:0 0 0 0; padding:0;}
-#nav ul li a								{font-family:"Arial", Verdana, Tahoma,serif; font-size:14px; color:#ffffff; margin:0 0 0 17px; display:inline-block; padding:11px 15px 6px 18px; background:url(/assets/nav_li.png) no-repeat center left;}
-#nav ul li a span							{ background:url(/assets/arrow_down.png) no-repeat center right;  display:inline-block;   padding: 0 20px 0 0;}
-#nav ul li a:hover							{ color: #666; text-decoration:underline;}
+#nav ul li									{float:left; display:inline-block; padding:0;}
+#nav ul li a								{font-family:"Arial", Verdana, Tahoma,serif; font-size:14px; color:#ffffff; margin:0 0 0 -1px; display:inline-block; padding:11px 15px 6px 18px; background:url(/assets/nav_li.png) no-repeat center left;}
+#nav ul li a span							{ background:url(/assets/arrow_down.png) no-repeat center right;  display:inline-block;   padding: 0 15px 0 0;}
 
 
-#nav ul li ul{
+
+#menu li{
     float: left;
-    background-color:#eaeaea; /* remove. this is for illustration purposes only */
-    width:213px; /* you need a width to accommodate tertiary menus */
-    margin-left: 18px;
-    margin-top: 6px;
-    position:absolute;
-    z-index:100;
+    position: relative;
 
+}
+
+#menu a{
+    float: left;
+    padding: 0 25px;
+    color: #999;
+    font:  Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+}
+
+#menu li:hover > a{
+    color: #fafafa;
+}
+
+*html #menu li a:hover{ /* IE6 */
+    color: #fafafa;
+}
+
+#menu li:hover > ul{
+    display: block;
+}
+
+/* Sub-menu */
+
+#menu ul{
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;
+    background: #444;
+    background: -moz-linear-gradient(#444, #111);
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+    background: -webkit-linear-gradient(#444, #111);
+    background: -o-linear-gradient(#444, #111);
+    background: -ms-linear-gradient(#444, #111);
+    background: linear-gradient(#444, #111);
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#menu ul li{
+    float: none;
+    width: 165px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    -moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+
+#menu ul li:last-child{
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#menu ul a{
+    line-height: 1;
+    float: none;
+    text-transform: none;
+}
+
+*html #menu ul a{ /* IE6 */
+    height: 10px;
+    width: 150px;
+}
+
+*:first-child+html #menu ul a{ /* IE7 */
+    height: 10px;
+    width: 150px;
+}
+
+#menu ul a:hover{
+    width: 80%;
+    background: #0186ba;
+    background: -moz-linear-gradient(#04acec,  #0186ba);
+    background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+    background: -webkit-linear-gradient(#04acec,  #0186ba);
+    background: -o-linear-gradient(#04acec,  #0186ba);
+    background: -ms-linear-gradient(#04acec,  #0186ba);
+    background: linear-gradient(#04acec,  #0186ba);
+}
+
+#menu ul li:first-child a{
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+
+}
+
+#menu ul li:first-child a:after{
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
     height: 0;
-    overflow: scroll;
-    overflow-x: hidden;
-    -webkit-transition: height 0.3s ease-in;
-    -moz-transition: height 0.3s ease-in;
-    -o-transition: height 0.3s ease-in;
-    -ms-transition: height 0.3s ease-in;
-    transition: height 0.3s ease-in;
-
-
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid #444;
 }
 
-
-/* don't display tertiary box yet */
-#nav > ul > li:hover ul ul, #nav > ul > li > a:hover ul ul{
-    height:0;
-
-}
-/* tertiary drop-down box */
-#nav ul ul ul{
-    left:170px;
-    width:170px;
+#menu ul li:first-child a:hover:after{
+    border-bottom-color: #04acec;
 }
 
-#nav > ul > li:hover ul, #nav > ul > li > a:hover ul,
-#nav ul ul li:hover > ul, #nav ul ul li a:hover > ul{
-    height:229px; /* need a height to accommodate any tertiary menus */
+#menu ul li:last-child a{
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
 }
 
-/* drop-down item styles */
-/* if you want different styling for tertiary menus, just copy the 4 rules below and insert an additional ul: for example: "#nav ul ul li", becomes: "#nav ul ul ul li" */
-
-#nav ul li ul li{
-    background-color:#eaeaea; /* grey */
-    width:200px;
-
-    -webkit-transition: background-color 0.3s ease;
-    -moz-transition: background-color 0.3s ease;
-    -o-transition: background-color 0.3s ease;
-    -ms-transition: background-color 0.3s ease;
-    transition: background-color 0.3s ease;
-
+/* Clear floated elements */
+#menu:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
-
-#nav ul ul li:hover {
-    background-color:#999; /* grey */
-}
-
-#nav ul ul li a {
-    display:block;
-    text-decoration:none;
-    margin:0 12px;
-    padding:5px 0;
-    color:#4c4c4c; /* grey */
-}
-#nav ul ul li a:hover, #nav ul ul li:hover > a {
-    color:#ffffff; /* white */
-}
-
-
-#nav ul ul ul li a{
-    border:0 !important;
-}
-#nav ul ul ul li + li a{
-    border-top:1px dotted #999 !important;
-}
-#nav ul ul li + li a{
-    border-top:1px dotted #999;
-}
-#nav ul ul li:hover + li a{
-    border-top:1px solid #eaeaea;
-}
-#nav ul ul ul li:hover + li a{
-    border: 0 !important;
-}
-#nav ul ul ul li:hover + li{
-    border-top:1px solid #999 !important;
-}
-
 
 
 /* ------------------ FOOTER HERE --------------------------*/

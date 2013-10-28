@@ -28,7 +28,7 @@
     </div>
     <div class="pop_up">
       <% if @lesson.subscription == "Free" %>
-        <iframe width="725" height="480" src="<%= "#{@lesson.vimeo_link}" %>" frameborder="0" allowfullscreen=""></iframe>
+        <iframe width="725" height="480" src="<%= "#{@lesson.vimeo_link}" + "?wmode=transparent" %>" frameborder="0" allowfullscreen=""></iframe>
       <% else %>
         <%= flash[:notice ]= "you need premium account to see this video" %>
       <% end %>

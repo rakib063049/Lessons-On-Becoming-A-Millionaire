@@ -16,7 +16,10 @@
 
 
 //= require jquery_ujs
+//= require jquery-1.9.1.min
 //= require base
 //= require jquery.jcarousel.js
 //= require jquery_nested_form
+//= require jquery.slimscroll.min
+
 //= require_tree .

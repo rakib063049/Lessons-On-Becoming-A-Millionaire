@@ -24,14 +24,18 @@
             <% tot = tot +lenght %>
             <% demo = lenght %>
         <% end %>
-        <%= tot.to_s + "s" %></p>
+        <% tot %>
+        <% min = Integer(tot) %>
+        <% sec = (tot - min) %>
+        <%= min.to_s + "min" %>
+        <%= sec.to_s + "sec"%></p>
 
       <a href="#"><img src="/assets/share.jpg" width="95" height="25" alt="share" align="right"></a>
       <div class="clear"></div>
     </div>
     <div class="pop_up">
 
-      <iframe width="725" height="480" src="<%= "#{@course.lessons.first.vimeo_link}" %>" frameborder="0" allowfullscreen=""></iframe>
+      <iframe width="725" height="480" src="<%= "#{@course.lessons.first.vimeo_link}" + "?wmode=transparent"%>"frameborder="0" allowfullscreen="" ></iframe>
 
     </div>
 
@@ -40,60 +44,81 @@
       <ul>
 
         <li class="title1"><p class="title1"><%= @course.chapter %></p><p class="duration1"></p> <div class="clear"></div></li>
-        <% @course.lessons.each do |lesson| %>
-            <li><p class= "title2"><%= link_to "#{lesson.title}" , lesson, :class => "title2" %></p> <p class="duration2"><%= lesson.video_length %></p><div class="clear"></div></li></li>  <%#if lesson.subscription.include? 'free'%>
+
+         <% @course.lessons.each do |lesson| %>
+            <li><p class= "title2"><%= link_to "#{lesson.title}" , lesson, :class => "title2" %></p>
+
+              <%# total = lesson.video_length.to_f %>
+              <%# lesson_min = total.to_i %>
+              <%# lesson_sec = total - lesson_min %>
+              <p class="duration2">
+                <%= total = lesson.video_length %>
+                <%#= lesson_min %>
+                <%#= lesson_sec.to_s() + "sec" %>
+              </p>
+              <div class="clear"></div>
+            </li>
+           <%#if lesson.subscription.include? 'free'%>
         <% end %>
 
       </ul>
       <div class="clear"></div>
     </div>
-    <div class="tab_cnt">
+    <div class="tab_cnt" >
+      <div id="scroll-slim">
 
-      <ul>
-        <li><a href="#tabs-1">Overview </a></li>
-        <li><a class="" href="#tabs-2">Action Steps </a></li>
-        <li><a class="" href="#tabs-3">Transcript</a></li>
-        <li><a class="no_bdr" href="#tabs-4">FAQ</a></li>
-      </ul>
-
-
-
+        <ul>
+          <li><a href="#tabs-1">Overview </a></li>
+          <li><a class="" href="#tabs-2">Action Steps </a></li>
+          <li><a class="" href="#tabs-3">Transcript</a></li>
+          <li><a class="no_bdr" href="#tabs-4">FAQ</a></li>
+        </ul>
 
 
 
-      <div class="clear"></div>
-      <div class="tab_container" id="tabs-1">
-               <h5>
-                  <%= @course.lessons.first.title %>  <%#= lesson.category.title %>
-                </h5>
-                <p><%= @course.lessons.first.summary %></p>
-                <label class="subject1">Subject:</label>
-                <% @course.categories.each do |category| %>
-                    <%= link_to "#{category.title}", category, :class => "links1" %>
 
-                <% end %>
 
-                <div class="clear"></div>
 
-      </div>
-
-      <div class="tab_container" id="tabs-2">
-        <p><%=  @course.lessons.first.action_steps %></p>
         <div class="clear"></div>
+        <div class="tab_container" id="tabs-1">
+          <div id="slim-scroll">
+            <h5>
+              <%= @course.lessons.first.title %>  <%#= lesson.category.title %>
+            </h5>
+            <p>
+              <%= @course.lessons.first.summary %>
+            </p>
+            <label class="subject1">Subject:</label>
+            <% @course.categories.each do |category| %>
+                <%= link_to "#{category.title}", category, :class => "links1" %>
+
+            <% end %>
+          </div>
+
+
+          <div class="clear"></div>
+
+        </div>
+
+        <div class="tab_container" id="tabs-2">
+          <p><%=  @course.lessons.first.action_steps %></p>
+          <div class="clear"></div>
+        </div>
+
+        <div class="tab_container" id="tabs-3">
+          <p><%= @course.lessons.first.transcript %></p>
+        </div>
+
+        <div class="tab_container" id="tabs-4">
+          <p><%= @course.lessons.first.faq %></p>
+        </div>
+
+
+
+
+      </div>
       </div>
 
-      <div class="tab_container" id="tabs-3">
-        <p><%= @course.lessons.first.transcript %></p>
-      </div>
-
-      <div class="tab_container" id="tabs-4">
-        <p><%= @course.lessons.first.faq %></p>
-      </div>
-
-
-
-
-    </div>
     <div class="clear"></div>
     <div class="suggested_videos">
       <%@courses = Course.where("title like :search ", search: "%#{@course.title}%", :limit => 4)%>
@@ -131,5 +156,15 @@
 <script type="text/javascript">
     $(function() {
         $( ".tab_cnt" ).tabs();
+    });
+
+    $(function(){
+
+        $('#scroll-slim').slimScroll({
+            height: '420px',
+            allowPageScroll: true,
+            disableFadeOut: true
+        });
+
     });
 </script>
