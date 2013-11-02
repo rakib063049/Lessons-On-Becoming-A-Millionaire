@@ -18,15 +18,18 @@
     <div class="diamondjohn">
       <h2><%= @course.title if @course.title.present? %></h2>
       <p class="p1">Uploaded on <%= (@course.created_at).strftime('%b %Y') %> <%#= (Time.now).strftime('%b %Y') %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <% tot = 0.0 %>
+        <% min, sec = 0,0 %>
         <% @course.lessons.each do |lesson| %>
-            <% lenght = lesson.video_length.to_f %>
-            <% tot = tot +lenght %>
-            <% demo = lenght %>
+            <% lenght = lesson.video_length %>
+            <% mins, secs= Course.get_mins_and_secs(lenght) %>
+
+            <% min = min+mins %>
+            <% sec = sec+secs %>
+            <% if sec > 60 %>
+                <% min += 1 %>
+                <% sec -= 60 %>
+            <% end %>
         <% end %>
-        <% tot %>
-        <% min = Integer(tot) %>
-        <% sec = (tot - min) %>
         <%= min.to_s + "min" %>
         <%= sec.to_s + "sec"%></p>
 

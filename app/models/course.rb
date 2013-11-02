@@ -17,4 +17,10 @@ class Course < ActiveRecord::Base
   accepts_nested_attributes_for :category_courses, :allow_destroy => true
   accepts_nested_attributes_for :course_instructors, :allow_destroy => true
   accepts_nested_attributes_for :course_lessons, :allow_destroy => true
+
+  def self.get_mins_and_secs(time_str)
+    m = time_str.match /\s*(\d+)[^\d]+(\d+)/
+    [m[1].to_i, m[2].to_i]
+  end
+
 end
