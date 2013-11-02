@@ -1,21 +1,90 @@
-<h1>Listing sub_categories</h1>
+<div class="maincontent">
+  <div class="dashboard">
+    <div class="cnt-nav">
+      <ul>
+        <li><a href="#" class="active"> All Subjects</a></li>
+        <li>&gt;&gt;</li>
+        <li class="no_bg"><a href="#"> Fashion</a></li>
+      </ul>
+      <div class="clear"> </div>
+    </div>
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+    <div class="marketing">
+      <h1>Welcome back, Travis! </h1>
+      <h6>Pick up where you left off with <a href="#">Marketing for a Clothing Line</a></h6>
+      <div class="cnt-marketing">
+        <img src="/assets/marketing-video.jpg" width="197" height="111" alt="video">
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo...   <a href="#">View Lesson &gt;&gt;</a></p>
+        <div class="clear"> </div>
+      </div>
+    </div>
 
-<% @sub_categories.each do |sub_category| %>
-  <tr>
-    <td><%= link_to 'Show', sub_category %></td>
-    <td><%= link_to 'Edit', edit_sub_category_path(sub_category) %></td>
-    <td><%= link_to 'Destroy', sub_category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
+    <div class="subjects-like">
+      <div class="subjects">
+        <h6>Subjects  </h6>
+        <ul>
+          <% @sub_categories.each do |subject| %>
+              <li><%= link_to "#{subject.title} <span>(#{subject.lessons.count})</span>".html_safe, subject %></li>
+          <% end %>
 
-<br />
+        </ul>
 
-<%= link_to 'New Sub category', new_sub_category_path %>
+
+        <h6>Instructors </h6>
+        <ul>
+          <% @instructors = Instructor.all(:order => "created_at DESC") %>
+
+          <% @instructors.each do |instructor| %>
+              <li><%= link_to "#{instructor.title} <span>(#{instructor.lessons.count})</span>".html_safe, instructor %></li>
+          <% end %>
+
+        </ul>
+      </div>
+
+      <div class="like-cnt">
+        <div class="content-like">
+          <h6>You May Like...</h6>
+          <ul>
+            <% @sub_categories.each do |category| %>
+                <% category.lessons.each do |lesson| %>
+                    <li>
+                      <%= link_to "#{image_tag (lesson.photo.url(:small)), :width => '159', :height => '79', :alt => "video" }<span> #{lesson.title}".html_safe, lesson %>
+
+                    </li>
+                <% end %>
+            <% end %>
+
+          </ul>
+          <div class="clear"> </div>
+        </div>
+
+        <div class="content-like">
+
+
+          <h6>Newly Added</h6>
+
+
+          </ul>
+          <div class="clear"> </div>
+
+        </div>
+
+        <div class="cnt-profile">
+
+
+          <div class="clear"></div>
+
+
+
+
+        </div>
+
+
+      </div>
+      <div class="clear"> </div>
+    </div>
+
+
+  </div>
+</div>

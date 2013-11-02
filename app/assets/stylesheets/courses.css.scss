@@ -124,30 +124,6 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
 .fashion_content_page1 .p2{font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000000; padding:0; margin:0; line-height:18px;}
 .fashion_content_page1 img{border:0;}
 
-.sidebar_page1{padding:38px 0 0 0; float:left;}
-.sidebar_page1 p{font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#000000; font-weight:bold; padding:0; margin:0; line-height:12px;}
-.sidebar_page1 .subjects{list-style:none; display:inline-block; padding:0 0 44px; margin:0;}
-.sidebar_page1 .subjects li{padding:6px 0 0 0; margin:0; display:block;}
-.sidebar_page1 .subjects li a{font-family:Arial, Helvetica, sans-serif; font-size:9px; color:#003471; display:inline-block;}
-.sidebar_page1 .subjects li a span{color:#555555; display:inline-block;}
-
-.sidebar_page1 .instructors{list-style:none; display:inline-block; padding:0; margin:0;}
-.sidebar_page1 .instructors li{padding:6px 0 0 0; margin:0; display:block;}
-.sidebar_page1 .instructors li a{font-family:Arial, Helvetica, sans-serif; font-size:9px; color:#003471; display:inline-block;}
-.sidebar_page1 .instructors li a span{color:#555555; display:inline-block;}
-
-
-.left_content{float:right; padding:38px 0 0 0;}
-.fashion_courses{}
-.fashion_courses h2{font-family:Arial, Helvetica, sans-serif; font-size:22px; color:#000000; padding:0 0 8px; margin:0; line-height:22px;}
-.fashion_courses .p1{font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#000000; padding:0; margin:0; line-height:12px;}
-.fashion_courses .getrich_content{padding:20px 0 25px 0; background:url(/assets/duble_lineborder.jpg) repeat-x bottom left;}
-.fashion_courses .getrich_content img{border:0; float:left;}
-.fashion_courses .getrich_content .txt_content{float:left; width:440px; padding:10px 0 0 26px;}
-.fashion_courses .getrich_content .txt_content h2{font-family:Arial, Helvetica, sans-serif; font-size:22px; color:#004a80; padding:0 0 16px; margin:0; line-height:22px;}
-.fashion_courses .getrich_content .txt_content .p2{font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000000; padding:0; margin:0; line-height:22px;}
-.fashion_courses .getrich_content .txt_content .p3{font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000000; padding:6px 0 0 0; margin:0; line-height:18px; font-weight:bold;}
-.fashion_courses .getrich_content .txt_content .p3 span{color:#004a80; font-weight:normal;}
 
 .subcategeories{padding:46px 0 40px 0;}
 .subcategeories h2{font-family:Arial, Helvetica, sans-serif; font-size:22px; color:#000000; padding:0 0 8px; margin:0; line-height:24px;}
@@ -170,7 +146,7 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
 .all_videos .video_img{float:left;}
 .all_videos .video_img img{border:0;}
 
-.left_content .see_button{background:url(/assets/grad_bg.jpg) repeat-x top left; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#555555; display:inline-block; text-align:center; width:590px; border:1px solid #e5e5e5; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; padding:10px 0 9px;}
+
 .diamondjohn{border:1px solid #969696; width:695px; margin:0 auto; padding:20px 12px 14px 18px; margin-left: -8px}
 .diamondjohn h2{font-family:Arial, Helvetica, sans-serif; font-size:22px; color:#000000; padding:0 0 7px; margin:0; line-height:24px; text-align: left;}
 .diamondjohn .p1{font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000000; padding:0 0 0; margin:0; line-height:12px;}
@@ -406,7 +382,7 @@ body										{color:#b1b1b1; font-family:"Arial", Verdana, Tahoma; font-size:12
 .cnt-marketing p a{font-family:Arial, Helvetica, sans-serif;font-size:14px;color:#003471;display:inline-block;}
 
 .subjects-like{}
-.subjects{float:left;}
+.subjects{float:left; width: 145px;}
 .subjects h6{font-family:Arial, Helvetica, sans-serif;font-size:11px;color:#000;font-weight:bold;margin:0;padding:0 0 5px;}
 .subjects ul{margin:0 0 45px;padding:0;display:block;}
 .subjects ul li{margin:0;padding:0 0 5px;display:block;}
