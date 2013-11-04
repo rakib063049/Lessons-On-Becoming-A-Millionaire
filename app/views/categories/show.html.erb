@@ -91,9 +91,9 @@
         <div class="clear"></div>
       </div>
       <div class="all_videos">
+        <% @videos = Category.videos(@category.title) %>
         <h1>All <%= @category.title %> Videos</h1>
-        <h3>105 Total Videos </h3>
-          <% @videos = Category.videos(@category.title) %>
+        <h3><%= @videos.count %> Total Videos </h3>
           <% @videos.each do |lesson| %>
             <div class="video_container">
                 <div class="video_img">
