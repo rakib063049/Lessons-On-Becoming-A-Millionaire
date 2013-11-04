@@ -92,148 +92,33 @@
         <div class="all_videos">
           <h1>All Fashion Videos</h1>
           <h3>105 Total Videos </h3>
-          <div class="video_container">
-            <div class="video_img">
-              <a href="#"><img src="images/video1.jpg" width="122" height="70" alt="video1"></a>
-            </div>
-            <div class="video_cnt">
-              <h6>Manufacturing tips for tee shirt companies</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-              <div class="timer">
-                5m 46s
+
+
+          <% @videos.each do |video| %>
+              <div class="video_container">
+                <div class="video_img">
+                  <%= link_to ("#{image_tag (video.photo.url)}".html_safe, video) %>
+                  <a href="#"><img src="images/video1.jpg" width="122" height="70" alt="video1"></a>
+                </div>
+                <div class="video_cnt">
+                  <h6><%= video.title %></h6>
+                  <p><%= video.summary %> </p>
+                  <div class="timer">
+                    <%= video.video_length %>
+                  </div>
+                  <div class="action">
+                    Action Steps
+                  </div>
+                  <div class="transcription">
+                    Transcript
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
               </div>
-              <div class="action">
-                Action Steps
-              </div>
-              <div class="transcription">
-                Transcript
-              </div>
-              <div class="clear"></div>
-            </div>
-            <div class="clear"></div>
-          </div>
-          <div class="video_container">
-            <div class="video_img">
-              <a href="#"><img src="images/video2.jpg" width="122" height="70" alt="video1"></a>
-            </div>
-            <div class="video_cnt">
-              <h6>Manufacturing tips for tee shirt companies</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-              <div class="timer">
-                5m 46s
-              </div>
-              <div class="action">
-                Action Steps
-              </div>
-              <div class="transcription">
-                Transcript
-              </div>
-              <div class="clear"></div>
-            </div>
-            <div class="clear"></div>
-          </div>
-          <div class="video_container">
-            <div class="video_img">
-              <a href="#"><img src="images/video3.jpg" width="122" height="70" alt="video1"></a>
-            </div>
-            <div class="video_cnt">
-              <h6>Manufacturing tips for tee shirt companies</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-              <div class="timer">
-                5m 46s
-              </div>
-              <div class="action">
-                Action Steps
-              </div>
-              <div class="transcription">
-                Transcript
-              </div>
-              <div class="clear"></div>
-            </div>
-            <div class="clear"></div>
-          </div>
-          <div class="video_container">
-            <div class="video_img">
-              <a href="#"><img src="images/video4.jpg" width="122" height="70" alt="video1"></a>
-            </div>
-            <div class="video_cnt">
-              <h6>Manufacturing tips for tee shirt companies</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-              <div class="timer">
-                5m 46s
-              </div>
-              <div class="action">
-                Action Steps
-              </div>
-              <div class="transcription">
-                Transcript
-              </div>
-              <div class="clear"></div>
-            </div>
-            <div class="clear"></div>
-          </div>
-          <div class="video_container">
-            <div class="video_img">
-              <a href="#"><img src="images/video5.jpg" width="122" height="70" alt="video1"></a>
-            </div>
-            <div class="video_cnt">
-              <h6>Manufacturing tips for tee shirt companies</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-              <div class="timer">
-                5m 46s
-              </div>
-              <div class="action">
-                Action Steps
-              </div>
-              <div class="transcription">
-                Transcript
-              </div>
-              <div class="clear"></div>
-            </div>
-            <div class="clear"></div>
-          </div>
-          <div class="video_container">
-            <div class="video_img">
-              <a href="#"><img src="images/video6.jpg" width="122" height="70" alt="video1"></a>
-            </div>
-            <div class="video_cnt">
-              <h6>Manufacturing tips for tee shirt companies</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-              <div class="timer">
-                5m 46s
-              </div>
-              <div class="action">
-                Action Steps
-              </div>
-              <div class="transcription">
-                Transcript
-              </div>
-              <div class="clear"></div>
-            </div>
-            <div class="clear"></div>
-          </div>
-          <div class="video_container">
-            <div class="video_img">
-              <a href="#"><img src="images/video6.jpg" width="122" height="70" alt="video1"></a>
-            </div>
-            <div class="video_cnt">
-              <h6>Manufacturing tips for tee shirt companies</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-              <div class="timer">
-                5m 46s
-              </div>
-              <div class="action">
-                Action Steps
-              </div>
-              <div class="transcription">
-                Transcript
-              </div>
-              <div class="clear"></div>
-            </div>
-            <div class="clear"></div>
-          </div>
-        </div>
-        <a href="#" class="see_button">See next 10 videos</a>
+          <% end %>
+
+          <%= link_to_next_page @videos, 'Load 10 more' %>
       </div>
       <div class="clear"></div>
       <div class="content_nav">
