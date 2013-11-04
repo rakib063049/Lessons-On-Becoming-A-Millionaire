@@ -75,50 +75,49 @@
 
 
   </div>
-  <div class="subcategeories">
-    <h2>xit
-      Subcategories</h2>
-    <p>Filter the content you see based on a more specific niche</p>
+      <div class="subcategeories">
+        <h2>Subcategories</h2>
+        <p>Filter the content you see based on a more specific niche</p>
 
-    <% @category.sub_categories.each do |sub_category| %>
-        <ul>
-          <li>
-            <%= link_to "#{sub_category.title}".html_safe, sub_category %>(<span><%= "#{sub_category.category.lessons.count}" %></span>)
-          </li>
+        <% @category.sub_categories.each do |sub_category| %>
+            <ul>
+              <li>
+                <%= link_to "#{sub_category.title}".html_safe, sub_category %>(<span><%= "#{sub_category.category.lessons.count}" %></span>)
+              </li>
 
-        </ul>
+            </ul>
 
-    <% end %>
-    <div class="clear"></div>
-  </div>
-  <div class="all_videos">
-    <h1>All <%= @category.title %> Videos</h1>
-    <h3>105 Total Videos </h3>
-      <% @videos = Category.videos(@category.title) %>
-      <% @videos.each do |lesson| %>
-        <div class="video_container">
-            <div class="video_img">
-              <%= link_to "#{image_tag (lesson.photo.url(:small)), :width => '129', :height => '79'}".html_safe, lesson %>
+        <% end %>
+        <div class="clear"></div>
+      </div>
+      <div class="all_videos">
+        <h1>All <%= @category.title %> Videos</h1>
+        <h3>105 Total Videos </h3>
+          <% @videos = Category.videos(@category.title) %>
+          <% @videos.each do |lesson| %>
+            <div class="video_container">
+                <div class="video_img">
+                  <%= link_to "#{image_tag (lesson.photo.url(:small)), :width => '129', :height => '79'}".html_safe, lesson %>
 
+                </div>
+                <div class="video_cnt">
+                    <h6><%= lesson.title %></h6>
+                    <p><%= lesson.summary %></p>
+                    <div class="timer">
+                      <%= lesson.video_length %>
+                    </div>
+                    <div class="action">
+                      <%= lesson.action_steps %>
+                    </div>
+                    <div class="transcription">
+                      <%= lesson.transcript %>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                  <div class="clear"></div>
             </div>
-            <div class="video_cnt">
-                <h6><%= lesson.title %></h6>
-                <p><%= lesson.summary %></p>
-                <div class="timer">
-                  <%= lesson.video_length %>
-                </div>
-                <div class="action">
-                  <%= lesson.action_steps %>
-                </div>
-                <div class="transcription">
-                  <%= lesson.transcript %>
-                </div>
-                <div class="clear"></div>
-            </div>
-              <div class="clear"></div>
-        </div>
 
-  <% end %>
+       <% end %>
 
   </div>
   <a href="#" class="see_button">See next 10 videos</a>
