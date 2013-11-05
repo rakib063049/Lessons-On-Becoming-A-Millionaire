@@ -91,7 +91,7 @@
         <div class="clear"></div>
       </div>
       <div class="all_videos">
-        <% @videos = Category.videos(@category.title) %>
+        <% @videos = Lesson.where("title like ?", "%#{@category.title}%").page(params[:page]).per(10) %>
         <h1>All <%= @category.title %> Videos</h1>
         <h3><%= @videos.count %> Total Videos </h3>
           <% @videos.each do |lesson| %>
@@ -120,7 +120,8 @@
        <% end %>
 
   </div>
-  <a href="#" class="see_button">See next 10 videos</a>
+  <%= link_to_next_page  @videos, 'See next 10 videos', :class => "see_button" %>
+  <%= link_to_previous_page  @videos, 'View previous', :class => "see_button" %>
 </div>
 <div class="clear"></div>
 <div class="content_nav">

@@ -250,6 +250,7 @@ DEPENDENCIES
   jquery-rails (~> 2.3.0)
   jquery-ui-rails
   jw_player_helper
+  kaminari
   less-rails
   libv8
   mysql2
