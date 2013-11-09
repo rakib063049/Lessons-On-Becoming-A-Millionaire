@@ -5,16 +5,16 @@
   <ul>
     <li><%= link_to 'Subject', categories_path %></li>
     <li>&gt;&gt;</li>
-    <li ><p class="current"><%= @category.title.html_safe %></p></li>
+    <li ><p class="current"><%= @category.title %></p></li>
 
   </ul>
   <div class="clear"></div>
 </div>
 <p id="notice"><%= notice %></p>
 <div class="fashion_content_page1">
-  <h2><%= @category.title.html_safe %></h2>
-  <p class="p1"><%= @category.sub_title.html_safe %><span></span></p>
-  <p class="p2"><%= @category.summary.html_safe %></p>
+  <h2><%= @category.title %></h2>
+  <p class="p1"><%= @category.sub_title %><span></span></p>
+  <p class="p2"><%= @category.summary %></p>
   <a href="#"><img src="/assets/share.jpg" width="64" height="25" alt="share" align='right'></a>
   <div class="clear"></div>
 </div>
@@ -26,7 +26,7 @@
   <ul class="subjects">
     <%  @categories = Category.all %>
     <% @categories.each do |subject| %>
-        <li><%= link_to "#{subject.title.html_safe} <span>(#{subject.lessons.count})</span>".html_safe, subject %></li>
+        <li><%= link_to "#{subject.title} <span>(#{subject.lessons.count})</span>".html_safe, subject %></li>
     <% end %>
 
 
@@ -37,7 +37,7 @@
   <%  @instructors = Instructor.all %>
   <ul class="instructors">
     <% @instructors.each do |instructor| %>
-        <li><%= link_to "#{instructor.title.html_safe} <span>(#{instructor.lessons.count})</span>".html_safe, instructor %></li>
+        <li><%= link_to "#{instructor.title} <span>(#{instructor.lessons.count})</span>".html_safe, instructor %></li>
     <% end %>
 
   </ul>
@@ -53,9 +53,9 @@
       <% @category.courses.each do |course| %>
           <%= link_to "#{image_tag (course.photo.url(:small)), :width => '118px', :height => '151px', :border => 0 }".html_safe, course %>
           <div class="txt_content">
-            <h2><%= course.title.html_safe if course.present?%></h2>
+            <h2><%= course.title if course.present?%></h2>
             <div class ="clear"></div>
-            <p class="p2"><%= course.summary.html_safe if course.present?%>. </p>
+            <p class="p2"><%= course.summary if course.present?%>. </p>
             <div class ="clear"></div>
             <p class="p3">
               Instructors: <% course.lessons.each do |lesson| %>
@@ -82,7 +82,7 @@
         <% @category.sub_categories.each do |sub_category| %>
             <ul>
               <li>
-                <%= link_to "#{sub_category.title.html_safe}".html_safe, sub_category %>(<span><%= "#{sub_category.category.lessons.count}" %></span>)
+                <%= link_to "#{sub_category.title}".html_safe, sub_category %>(<span><%= "#{sub_category.category.lessons.count}" %></span>)
               </li>
 
             </ul>
@@ -92,7 +92,7 @@
       </div>
       <div class="all_videos">
         <% @videos = Lesson.where("title like ?", "%#{@category.title}%").page(params[:page]).per(10) %>
-        <h1>All <%= @category.title.html_safe %> Videos</h1>
+        <h1>All <%= @category.title %> Videos</h1>
         <h3><%= @videos.count %> Total Videos </h3>
           <% @videos.each do |lesson| %>
             <div class="video_container">
@@ -101,16 +101,16 @@
 
                 </div>
                 <div class="video_cnt">
-                    <h6><%= lesson.title.html_safe %></h6>
-                    <p><%= lesson.summary.html_safe %></p>
+                    <h6><%= lesson.title %></h6>
+                    <p><%= lesson.summary %></p>
                     <div class="timer">
                       <%= lesson.video_length %>
                     </div>
                     <div class="action">
-                      <%= lesson.action_steps.html_safe %>
+                      <%= lesson.action_steps %>
                     </div>
                     <div class="transcription">
-                      <%= lesson.transcript.html_safe %>
+                      <%= lesson.transcript %>
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -128,7 +128,7 @@
   <ul>
     <li><%= link_to 'Subject', categories_path %></li>
     <li>&gt;&gt;</li>
-    <li><p class="current"><%= @category.title.html_safe %></p></li>
+    <li><p class="current"><%= @category.title %></p></li>
 
   </ul>
   <div class="clear"></div>
