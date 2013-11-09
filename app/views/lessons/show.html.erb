@@ -12,9 +12,9 @@
         <li>&gt;&gt;</li>
         <li><%= link_to "#{@lesson.categories.first.title}".html_safe, @lesson.categories.first %></li>
         <li>&gt;&gt;</li>
-        <li><%= link_to "#{@lesson.categories.first.sub_categories.first.title}", @lesson.categories.first.sub_categories.first %></li>
+        <li><%= link_to "#{@lesson.categories.first.sub_categories.first.title}".html_safe, @lesson.categories.first.sub_categories.first %></li>
         <li>&gt;&gt;</li>
-        <li><%= @lesson.title %></li>
+        <li><%= @lesson.title.html_safe %></li>
       </ul>
       <div class="clear"></div>
     </div>
@@ -73,9 +73,9 @@
 
         <div id="tabs-1">
               <h5>
-                <%= @lesson.title %>
+                <%= @lesson.title.html_safe %>
               </h5>
-              <p><%= @lesson.title %></p>
+              <p><%= @lesson.title.html_safe %></p>
               <% @lesson.categories.each do |category| %>
                   <%= link_to "#{category.title}", category, :class => "links1" %>
 
@@ -84,16 +84,16 @@
         </div>
 
         <div id="tabs-2">
-          <p> <%= @lesson.action_steps %> </p>
+          <p> <%= @lesson.action_steps.html_safe %> </p>
           <div class="clear"></div>
         </div>
 
         <div id="tabs-3">
-          <p><%= @lesson.transcript %></p>
+          <p><%= @lesson.transcript.html_safe %></p>
         </div>
 
         <div id="tabs-4">
-          <p><%= @lesson.faq %></p>
+          <p><%= @lesson.faq.html_safe %></p>
 
         </div>
 
@@ -128,7 +128,7 @@
         <li>&gt;&gt;</li>
         <li><%= link_to "#{@lesson.categories.first.title}".html_safe, @lesson.categories.first %></li>
         <li>&gt;&gt;</li>
-        <li><%= link_to "#{@lesson.categories.first.sub_categories.first.title}", @lesson.categories.first.sub_categories.first %></li>
+        <li><%= link_to "#{@lesson.categories.first.sub_categories.first.title}".html_safe, @lesson.categories.first.sub_categories.first %></li>
         <li>&gt;&gt;</li>
         <li><%= @lesson.title %></li>
       </ul>

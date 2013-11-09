@@ -29,9 +29,9 @@
 
 
         <%#= f.input :instructor, :as => :select, :collection => Instructor.all.collect {|i| [i.title, i.id]}, :prompt => 'Select an Instructor', :wrapper_html => {:style => 'width: 56%'} %>
-        <%= f.input :action_steps, :wrapper_html => {:style => 'width: 56%'} %>
-        <%= f.input :transcript, :wrapper_html => {:style => 'width: 56%'} %>
-        <%= f.input :faq, :wrapper_html => {:style => 'width: 56%'} %>
+        <%= f.input :action_steps, :as => :text, :wrapper_html => {:style => 'width: 56%;' } %>
+        <%= f.input :transcript, :as => :text, :wrapper_html => {:style => 'width: 56%;'} %>
+        <%= f.input :faq, :as => :text, :wrapper_html => {:style => 'width: 56%;'} %>
         <%= f.input :subscription, :as => :select ,:collection => ['Free','Premium'], :prompt => "Select subscription type", :wrapper_html => {:style => 'width: 56%'} %>
         <%= f.input :photo, :wrapper_html => {:style => 'width: 56%'}, :label => "Upload thumbnail" %>
     <% end %>

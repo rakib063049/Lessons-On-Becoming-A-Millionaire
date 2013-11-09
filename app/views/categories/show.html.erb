@@ -5,16 +5,16 @@
   <ul>
     <li><%= link_to 'Subject', categories_path %></li>
     <li>&gt;&gt;</li>
-    <li ><p class="current"><%= @category.title %></p></li>
+    <li ><p class="current"><%= @category.title.html_safe %></p></li>
 
   </ul>
   <div class="clear"></div>
 </div>
 <p id="notice"><%= notice %></p>
 <div class="fashion_content_page1">
-  <h2><%= @category.title %></h2>
-  <p class="p1"><%= @category.sub_title %><span></span></p>
-  <p class="p2"><%= @category.summary %></p>
+  <h2><%= @category.title.html_safe %></h2>
+  <p class="p1"><%= @category.sub_title.html_safe %><span></span></p>
+  <p class="p2"><%= @category.summary.html_safe %></p>
   <a href="#"><img src="/assets/share.jpg" width="64" height="25" alt="share" align='right'></a>
   <div class="clear"></div>
 </div>
