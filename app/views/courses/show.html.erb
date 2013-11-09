@@ -11,12 +11,12 @@
         <li>&gt;&gt;</li>
         <li><%= link_to "#{@course.categories.first.sub_categories.first.title}", @course.categories.first.sub_categories.first %></li>
         <li>&gt;&gt;</li>
-        <li><%= @course.title %></li>
+        <li><%= @course.title.html_safe %></li>
       </ul>
       <div class="clear"></div>
     </div>
     <div class="diamondjohn">
-      <h2><%= @course.title if @course.title.present? %></h2>
+      <h2><%= @course.title.html_safe if @course.title.present? %></h2>
       <p class="p1">Uploaded on <%= (@course.created_at).strftime('%b %Y') %> <%#= (Time.now).strftime('%b %Y') %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <% min, sec = 0,0 %>
         <% @course.lessons.each do |lesson| %>
@@ -49,7 +49,7 @@
         <li class="title1"><p class="title1"><%= @course.chapter %></p><p class="duration1"></p> <div class="clear"></div></li>
 
          <% @course.lessons.each do |lesson| %>
-            <li><p class= "title2"><%= link_to "#{lesson.title}" , lesson, :class => "title2" %></p>
+            <li><p class= "title2"><%= link_to "#{lesson.title}".html_safe , lesson, :class => "title2" %></p>
 
               <%# total = lesson.video_length.to_f %>
               <%# lesson_min = total.to_i %>
@@ -86,14 +86,14 @@
         <div class="tab_container" id="tabs-1">
           <div id="slim-scroll">
             <h5>
-              <%= @course.lessons.first.title %>  <%#= lesson.category.title %>
+              <%= @course.lessons.first.title.html_safe %>  <%#= lesson.category.title %>
             </h5>
             <p>
-              <%= @course.lessons.first.summary %>
+              <%= @course.lessons.first.summary.html_safe %>
             </p>
             <label class="subject1">Subject:</label>
             <% @course.categories.each do |category| %>
-                <%= link_to "#{category.title}", category, :class => "links1" %>
+                <%= link_to "#{category.title}".html_safe, category, :class => "links1" %>
 
             <% end %>
           </div>
@@ -104,16 +104,16 @@
         </div>
 
         <div class="tab_container" id="tabs-2">
-          <p><%=  @course.lessons.first.action_steps %></p>
+          <p><%=  @course.lessons.first.action_steps.html_safe %></p>
           <div class="clear"></div>
         </div>
 
         <div class="tab_container" id="tabs-3">
-          <p><%= @course.lessons.first.transcript %></p>
+          <p><%= @course.lessons.first.transcript.html_safe %></p>
         </div>
 
         <div class="tab_container" id="tabs-4">
-          <p><%= @course.lessons.first.faq %></p>
+          <p><%= @course.lessons.first.faq.html_safe %></p>
         </div>
 
 
@@ -130,7 +130,7 @@
       <ul>
         <% @courses.each do |course| %>
             <% course.lessons.each do |lesson| %>
-                <li><%= link_to("#{image_tag (lesson.photo.url(:small))}".html_safe,lesson)  %><span><%= lesson.title %></span></li>
+                <li><%= link_to("#{image_tag (lesson.photo.url(:small))}".html_safe,lesson)  %><span><%= lesson.title.html_safe %></span></li>
             <% end %>
 
         <% end %>
@@ -144,9 +144,9 @@
         <li>&gt;&gt;</li>
         <li><%= link_to "#{@course.categories.first.title}".html_safe, @course.categories.first %></li>
         <li>&gt;&gt;</li>
-        <li><%= link_to "#{@course.categories.first.sub_categories.first.title}", @course.categories.first.sub_categories.first %></li>
+        <li><%= link_to "#{@course.categories.first.sub_categories.first.title.html_safe}", @course.categories.first.sub_categories.first %></li>
         <li>&gt;&gt;</li>
-        <li><%= @course.title %></li>
+        <li><%= @course.title.html_safe %></li>
       </ul>
       <div class="clear"></div>
     </div>

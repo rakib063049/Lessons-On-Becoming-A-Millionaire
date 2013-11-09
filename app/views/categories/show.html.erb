@@ -45,7 +45,7 @@
 </div>
 <div class="left_content">
   <div class="fashion_courses">
-    <h2> <%= @category.title %> Courses (<%= @category.courses.count %>) <%#= @category.title %> </h2>
+    <h2> <%= @category.title.html_safe %> Courses (<%= @category.courses.count %>) <%#= @category.title %> </h2>
     <p class="p1">We’ve created full courses you can follow step-by-step based on the content in this section.</p>
     <div class="getrich_content">
 
