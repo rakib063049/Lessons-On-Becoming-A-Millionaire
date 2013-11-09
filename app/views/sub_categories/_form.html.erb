@@ -3,7 +3,8 @@
         <%= f.input :category, :as => :select, :collection => Category.all.collect {|c| [c.title, c.id]}, :prompt => 'Select category', :wrapper_html => {:style => 'width: 56%'} %>
         <%= f.input :title, :wrapper_html => {:style => 'width: 56%'} %>
         <%= f.input :sub_title, :wrapper_html => {:style => 'width: 56%'} %>
-        <%= f.input :summary, :wrapper_html => {:style => 'width: 56%'} %>
+        <%= f.input :summary, :as => :text, :wrapper_html => {:style => 'width: 56%'} %>
+
     <% end %>
 
     <%= f.actions do %>

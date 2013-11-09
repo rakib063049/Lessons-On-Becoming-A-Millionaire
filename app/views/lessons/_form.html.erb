@@ -3,7 +3,8 @@
         <%= f.input :title, :wrapper_html => {:style => 'width: 56%'} %>
         <%= f.input :vimeo_link, :wrapper_html => {:style => 'width: 56%'} %>
         <%= f.input :video_length, :wrapper_html => {:style => 'width: 56%'} %>
-        <%= f.input :summary, :wrapper_html => {:style => 'width: 56%'} %>
+        <%= f.input :summary, :as => :text, :wrapper_html => {:style => 'width: 56%'} %>
+
         <%#= f.input :category, :as => :select, :collection => Category.all.collect {|c| [c.title, c.id]}, :prompt => 'Select a Category', :wrapper_html => {:style => 'width: 56%'} %>
 
         <li class="string input required stringish" id="instructor_lessons_input"><p class="category-label">Instructor</p></li>
