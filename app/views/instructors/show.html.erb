@@ -15,7 +15,7 @@
 
     <div class="fashion_content_page2_cnt"> <h2><%= @instructor.title %></h2>
       <p class="p1"><%= @instructor.sub_title %><span></span></p>
-      <p class="p2"><%= @instructor.summary %></p>
+      <p class="p2"><%= @instructor.summary.html_safe %></p>
     </div>
 
     <div class="clear"></div>
@@ -32,14 +32,14 @@
         <div class="box1">
           <%= link_to "#{image_tag (lesson.photo.url(:small)), :width => '142px', :height => '150px', :border => 0, :float => 'left' }".html_safe, lesson %>
           <div class="inner-box">
-            <span><%= lesson.title if lesson.present?%></span>
+            <span><%= lesson.title.html_safe if lesson.present?%></span>
             <div class ="clear"></div>
-            <p><%= lesson.summary if lesson.present?%>. </p>
+            <p><%= lesson.summary.html_safe if lesson.present?%>. </p>
             <div class ="clear"></div>
             <ul>
-              <li><%=link_to "#{lesson.video_length}", lesson, :class=>"icon1" if lesson.present? %></li>
-              <li><%=link_to "#{lesson.action_steps}", lesson, :class=>"icon2" if lesson.subscription == "Premium" && "Free" %></li>
-              <li><%= link_to "#{ lesson.transcript}", lesson, :class=>"icon3" if lesson.subscription =="Premium" && "Free" %></li>
+              <li><%=link_to "#{lesson.video_length}".html_safe, lesson, :class=>"icon1" if lesson.present? %></li>
+              <li><%=link_to "#{lesson.action_steps}".html_safe, lesson, :class=>"icon2" if lesson.subscription == "Premium" && "Free" %></li>
+              <li><%= link_to "#{ lesson.transcript}".html_safe, lesson, :class=>"icon3" if lesson.subscription =="Premium" && "Free" %></li>
             </ul>
             <div class="clear"></div>
           </div>
@@ -57,8 +57,8 @@
       <% @instructors.each do |instructor|%>
           <div class="box4">
             <%= link_to "#{image_tag (instructor.photo.url), :width => '102px', :height => '142px' }".html_safe, instructor %>
-            <p><%= instructor.title %></p>
-            <span><%= instructor.subtitle %></span>
+            <p><%= instructor.title.html_safe %></p>
+            <span><%= instructor.sub_title.html_safe %></span>
           </div>
       <% end %>
 
