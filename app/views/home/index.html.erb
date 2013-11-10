@@ -1,81 +1,109 @@
 <p></p>
 <!-- main content begins -->
 <div id="main" class="container">    <br />
-<div id="main-header">
-  <h1>Learn to succeed from some of the most<br /> successful people in the world - step by step</h1>
-</div>
-<div id="main-video">
-  <div class="left">
-    <p>Ever wonder how the world's top millionaires and entrepreneurs made it big? Now YOU can learn how they did it - directly from them.</p>
-    <p id="text-discover">What's your passion? Discover it here!</p>
-    <a href="#" id="btn-get-started"> Get Started Today! </a></div>
-  <div class="right"><!-- video goes here --> <iframe width="494" height="280" src="http://www.youtube.com/embed/fLPl9KfXmbo" frameborder="0" allowfullscreen=""></iframe> <!-- video ends --></div>
-</div>
-<div id="main-as-seen"><img src="/assets/logos.gif" /></div>
-<div id="main-instructors">
-  <h2>Meet your ultra-successful instructors</h2>
-  <p>Each course at Lessons On Becoming A Millionaire is taught by a group of absolute powerhouses in that industry.<br /> Not only will you know who they are and what they've done, but you can rest assured that they know their stuff.</p>
-  <h3>Instructors include:</h3>
-  <div class="instructors">
-    <div id="carousel-horizontal">
-      <ul id="carousel">
-        <% @instructors.each do |instructor| %>
-            <li><%= link_to (image_tag instructor.photo.url(:small), :id => "instructor#{instructor.id}", :style => "width: 158px; height: 200px").html_safe, instructor %>
-            <p><%= instructor.title.html_safe %></p>
-            <p id="subtitle"><%= instructor.sub_title.html_safe %></p>
-            </li>
-        <% end %>
-      </ul>
+  <div id="main-header">
+    <h1>Learn to succeed from some of the most<br /> successful people in the world - step by step</h1>
+  </div>
+  <div id="main-video">
+    <div class="left">
+      <p>Ever wonder how the world's top millionaires and entrepreneurs made it big? Now YOU can learn how they did it - directly from them.</p>
+      <p id="text-discover">What's your passion? Discover it here!</p>
+      <a href="#" id="btn-get-started"> Get Started Today! </a></div>
+    <div class="right"><!-- video goes here --> <iframe width="494" height="280" src="http://www.youtube.com/embed/fLPl9KfXmbo" frameborder="0" allowfullscreen=""></iframe> <!-- video ends --></div>
+  </div>
+  <div id="main-as-seen"><img src="/assets/logos.gif" /></div>
+  <div id="main-instructors">
+    <h2>Meet your ultra-successful instructors</h2>
+    <p>Each course at Lessons On Becoming A Millionaire is taught by a group of absolute powerhouses in that industry.<br /> Not only will you know who they are and what they've done, but you can rest assured that they know their stuff.</p>
+    <h3>Instructors include:</h3>
+    <div class="instructors">
+      <div id="carousel-horizontal">
+        <ul id="carousel">
+          <% @instructors.each do |instructor| %>
+              <li><%= link_to (image_tag instructor.photo.url(:small), :id => "instructor#{instructor.id}", :style => "width: 158px; height: 200px").html_safe, instructor %>
+                <p><%= instructor.title.html_safe %></p>
+                <p id="subtitle"><%= instructor.sub_title.html_safe %></p>
+              </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+    <p>(Scroll through, or click to see details)</p>
+  </div>
+
+  <div id="main-how-it-works">
+    <h2>Here's how it works</h2>
+    <div class="steps"><!-- first step -->
+      <div class="step" id="step1">
+        <h3><span> 1. </span> Ignite Your Passion</h3>
+        <img src="/assets/icon10.png" />
+        <div class="wrap">
+          <div class="text">
+            <p>Let's be honest... Making money is great. But do you know what's even better? Making money doing something you absolutely love. We'll help you discover your passion to ensure everything you do from here on helps you build a life of both wealth AND happiness.</p>
+          </div>
+        </div>
+      </div>
+      <!-- first step ends --> <!-- second step -->
+      <div class="step" id="step2">
+        <h3><span> 2. </span> Choose A Course</h3>
+        <img src="/assets/icon11.png" />
+        <div class="wrap">
+          <div class="text">
+            <p>Once you've found your passion, it's time to learn how to make money from it! Not only do we offer step by step courses teaching just that, but each course is taught by people who have already made millions in that industry. When it comes to building the life you want, start here!</p>
+          </div>
+        </div>
+      </div>
+      <!-- second step ends --> <!-- third step -->
+      <div class="step" id="step3">
+        <h3><span> 3. </span> Complete The Steps</h3>
+        <img src="/assets/icon12.png" />
+        <div class="wrap">
+          <div class="text">
+            <p>So you've found your passion and you've chosen a course. Now your path is simple: follow the steps, learn the lessons we're teaching, and take action when we tell you to! When you finish, you'll have a fully-functional company you can start making money from right away!</p>
+          </div>
+        </div>
+      </div>
+      <!-- third step ends --> <!-- fourth step -->
+      <div class="step" id="step4">
+        <h3><span> 4. </span> Become A Star</h3>
+        <img src="/assets/icon13.png" />
+        <div class="wrap">
+          <div class="text">
+            <p>Now that you've learned how to make money doing something you love from the best in the business, it's time for you to keep building on it! We also offer a full line of courses teaching you to take your existing company to new levels of profitability and efficiency - fast.</p>
+          </div>
+        </div>
+      </div>
+      <!-- fourth step ends --></div>
+  </div>
+  <div class="catagory">
+    <div class="sub_catagory">
+      <h5 class="header_catagory">The roadmap ot success written by the best of the best</h5>
+      <p class="p_catagory">
+        Just watch the videos, follow the instructions bellow it, complete the tasks for each step, and by the end of the course, you'll have a fully-functional company you can start making money.
+      </p>
+    </div>
+    <div class="sub_catagory">
+
+      <img src="/assets/tv_img.png" alt="" class="img_catagory" />
+      <div class="clear"></div> <br /> <br />
     </div>
   </div>
-  <p>(Scroll through, or click to see details)</p>
-</div>
 
-<div id="main-how-it-works">
-  <h2>Here's how it works</h2>
-  <div class="steps"><!-- first step -->
-    <div class="step" id="step1">
-      <h3><span> 1. </span> Ignite Your Passion</h3>
-      <img src="/assets/icon10.png" />
-      <div class="wrap">
-        <div class="text">
-          <p>Let's be honest... Making money is great. But do you know what's even better? Making money doing something you absolutely love. We'll help you discover your passion to ensure everything you do from here on helps you build a life of both wealth AND happiness.</p>
-        </div>
-      </div>
-    </div>
-    <!-- first step ends --> <!-- second step -->
-    <div class="step" id="step2">
-      <h3><span> 2. </span> Choose A Course</h3>
-      <img src="/assets/icon11.png" />
-      <div class="wrap">
-        <div class="text">
-          <p>Once you've found your passion, it's time to learn how to make money from it! Not only do we offer step by step courses teaching just that, but each course is taught by people who have already made millions in that industry. When it comes to building the life you want, start here!</p>
-        </div>
-      </div>
-    </div>
-    <!-- second step ends --> <!-- third step -->
-    <div class="step" id="step3">
-      <h3><span> 3. </span> Complete The Steps</h3>
-      <img src="/assets/icon12.png" />
-      <div class="wrap">
-        <div class="text">
-          <p>So you've found your passion and you've chosen a course. Now your path is simple: follow the steps, learn the lessons we're teaching, and take action when we tell you to! When you finish, you'll have a fully-functional company you can start making money from right away!</p>
-        </div>
-      </div>
-    </div>
-    <!-- third step ends --> <!-- fourth step -->
-    <div class="step" id="step4">
-      <h3><span> 4. </span> Become A Star</h3>
-      <img src="/assets/icon13.png" />
-      <div class="wrap">
-        <div class="text">
-          <p>Now that you've learned how to make money doing something you love from the best in the business, it's time for you to keep building on it! We also offer a full line of courses teaching you to take your existing company to new levels of profitability and efficiency - fast.</p>
-        </div>
-      </div>
-    </div>
-    <!-- fourth step ends --></div>
-</div>
 
+
+  <div class="catagory">
+    <div class="sub_catagory">
+      <img src="/assets/marque.png" alt="" class="img_catagory_tag" />
+    </div>
+
+    <div class="sub_catagory">
+      <h5 class="header_catagory_fashion">Learn to start a successful <span>fashion</span> company from a pro</h5> <div class="clear"></div><br />
+      <p class="p_catagory_fashion">our instructors are effective, passionate enterpreneurs who have already made it big in their chosen industry.Now they're sharing their expertise in dozens of topics with you </p>
+    </div>
+
+  </div>
+  <div class="clear"></div><br /> <br />
+</div>
 <div id="main-roadmap">
   <h2>The roadmap to success written by the best of the best</h2>
   <p>Just watch the videos, follow the instructions below it, complete the tasks for each step, and by the end of the<br /> course, you&rsquo;ll have a fully-functional company you can start making money from.</p>
@@ -498,19 +526,19 @@
 <div id = "placeholder"></div>
 
 <script type="text/javascript">
-   $(document).ready(function(){
-       $(".step").hover(function() {
-           $(this).find(".text").filter(':not(:animated)').animate({"top": "28px"}, "fast");
-       }, function() {
-           $(this).find(".text").animate({"top": "-130px"}, "fast");
-       });
+    $(document).ready(function(){
+        $(".step").hover(function() {
+            $(this).find(".text").filter(':not(:animated)').animate({"top": "28px"}, "fast");
+        }, function() {
+            $(this).find(".text").animate({"top": "-130px"}, "fast");
+        });
 
 
-       $('#carousel').jcarousel({
-           wrap: 'circular'
-       });
+        $('#carousel').jcarousel({
+            wrap: 'circular'
+        });
 
-   });
+    });
 
 
 </script>
