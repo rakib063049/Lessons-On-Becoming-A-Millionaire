@@ -19,22 +19,12 @@
   <div class="instructors">
     <div id="carousel-horizontal">
       <ul id="carousel">
-        <li class="instructor"><img src="/assets/instructor2.jpg" width="159" height="258" id="instructor2" /></li>
-        <li class="instructor"><img src="/assets/instructor3.jpg" width="159" height="258" id="instructor3" /></li>
-        <li class="instructor last"><img src="/assets/instructor4.jpg" width="159" height="258" id="instructor4" /></li>
-        <li class="instructor"><img src="/assets/instructor5.jpg" width="159" height="258" id="instructor5" /></li>
-        <li class="instructor"><img src="/assets/Instructor-AndreaLake.png" width="159" height="258" id="instructor6" /></li>
-        <li class="instructor"><img src="/assets/instructor7.jpg" width="159" height="258" id="instructor7" /></li>
-        <li class="instructor"><img src="/assets/instructor8.jpg" width="159" height="258" id="instructor8" /></li>
-        <li class="instructor"><img src="/assets/instructor9.jpg" width="159" height="258" id="instructor9" /></li>
-        <li class="instructor"><img src="/assets/instructor10.jpg" width="159" height="258" id="instructor10" /></li>
-        <li class="instructor"><img src="/assets/Instructor-AlexBard.png" width="159" height="258" id="instructor11" /></li>
-        <li class="instructor"><img src="/assets/Instructor-ChanceBarnett.png" width="159" height="258" id="instructor12" /></li>
-        <li class="instructor"><img src="/assets/Instructor-EmersonSpartz.png" width="159" height="258" id="instructor13" /></li>
-        <li class="instructor"><img src="/assets/Instructor-KristinKnight.png" width="159" height="258" id="instructor14" /></li>
-        <li class="instructor"><img src="/assets/Instructor-MicahBaldwin.png" width="159" height="258" id="instructor15" /></li>
-        <li class="instructor"><img src="/assets/Instructor-MikeDelPonte.png" width="159" height="258" id="instructor16" /></li>
-        <li class="instructor last"><img src="/assets/Instructor-SethKravitz.png" width="159" height="258" id="instructor17" /></li>
+        <% @instructors.each do |instructor| %>
+            <li><%= link_to (image_tag instructor.photo.url(:small), :id => "instructor#{instructor.id}", :style => "width: 158px; height: 200px").html_safe, instructor %>
+            <p><%= instructor.title.html_safe %></p>
+            <p id="subtitle"><%= instructor.sub_title.html_safe %></p>
+            </li>
+        <% end %>
       </ul>
     </div>
   </div>
