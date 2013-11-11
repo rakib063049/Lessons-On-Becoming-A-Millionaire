@@ -31,7 +31,7 @@
 .content_nav ul li a{ display:inline-block;color:#004a80;}
 .content_nav ul li p{ font-size: 9px; color: #000;}
 .content_nav ul li a.current{color:#000;}
-.slider{width:680px; margin:0 auto; padding:10px 0; position:relative;}
+.slider{width:740px; margin:0 auto; padding:10px 0; position:relative; height: 250px;}
 .box4{ float:left; display:inline-block; width:170px; text-align:center;}
 .box4 a{display:inline-block; margin:0 0px;}
 .box4 p{font:normal 13px Arial, Helvetica, sans-serif; color:#004a80; margin:5px 0 0 0;}
@@ -40,8 +40,28 @@
 .arrows a{margin:0; padding:0;}
 .arrows a.right{margin:0; padding:0; position:absolute; right:0; width: 50px; }
 .more-main {
-  border: 2px solid #000;
+  border: 2px solid #757E9B;
   margin: 17px 0 0;
   padding: 10px 0;
-  width: 769px;
+  width: 110%;
+  margin-left: -22px;
 }
+
+#show-instructors {
+  width: 662px;
+  margin-left: 10px !important;
+  margin-top: 20px !important;
+  height: 260px;
+  float: left;
+  clear: both;
+  margin: 0 0 11px 120px;
+  position: relative;
+}
+
+#show-instructors p{
+  float: left;
+  width: 100%;
+  clear: both;
+  text-align: center;
+}
+

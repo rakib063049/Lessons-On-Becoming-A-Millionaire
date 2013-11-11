@@ -21,6 +21,11 @@
   text-indent: -9000px;
   background: url(/assets/text-discover.png) top left no-repeat;
 }
+#btn-get-started span{
+  color: #545a8f;
+  font-size: 31px;
+  text-shadow: 1px 0px #2A3063;
+}
 #btn-get-started {
   float: left;
   clear: both;
@@ -32,11 +37,11 @@
   background: -webkit-linear-gradient(top, #e6bc56 0%, #d79a2f 100%); /* Chrome10+,Safari5.1+ */
   background: -o-linear-gradient(top, #e6bc56 0%, #d79a2f 100%); /* Opera 11.10+ */
   background: -ms-linear-gradient(top, #e6bc56 0%, #d79a2f 100%); /* IE10+ */
-  background: linear-gradient(to bottom, #e6bc56 0%, #d79a2f 100%); /* W3C */
+  background: linear-gradient(to bottom, #51578e 0%, #565a8e 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6bc56', endColorstr='#d79a2f', GradientType=0 ); /* IE6-9 */
   color: #FFF;
   text-align: center;
-  font-size: 21px;
+  font-size: 16px;
   font-family: Myriad, Helvetica, Arial, sans-serif;
   border-radius: 4px;
   margin: -50px 0 0 50px;
@@ -293,7 +298,7 @@
 #main-covered h2 {
   clear: both;
   float: left;
-  width: 100%;
+  width: 80%;
   font-size: 30px;
   line-height: 35px;
   margin: 0 0 27px 0;
@@ -522,7 +527,7 @@
   height: 220px;
   margin: 0;
   clear: both;
-  background: url(/assets/main-cta.gif) top left no-repeat;
+  background: url(/assets/fb_share2.png) top left no-repeat;
   text-indent: -9000px;
   float: left;
 }
@@ -804,6 +809,11 @@
   width:100%;
   margin-top:60px;
 }
+.new-catagory{
+  float:left;
+  width:100%;
+  margin-top:60px;
+}
 .catagory_img{
   float:left;
   width:100%;
@@ -872,4 +882,75 @@
 .img_catagory_tag {
   width: 350px;
 }
+
+.text_color{
+  color:#004a80;
+}
+text_h2{
+  float:left;
+  width:680px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:30px;
+  text-align:center;
+  line-height:30px;
+  margin:24px 0 24px 145px;
+}
+
+a.see-more{
+  float:left;
+  width:100%;
+  text-align:right;
+  color:#004a80;
+  font-size:20px;
+  font-family:Arial, Helvetica, sans-serif;
+  text-decoration:none;
+  margin-top:40px;
+}
+
+.sub_content_div{
+  float:left;
+  width:280px;
+  margin-left:32px;
+}
+.sub_content_div img{
+  float:left;
+  width:70%;
+  display:block;
+}
+.sub_content_div h5{
+  float:left;
+  width:100%;
+  display:block;
+  text-align:center;
+  font-size:20px;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top:20px;
+}
+.sub_content_div p{
+  float:left;
+  width:95%;
+  display:block;
+  text-align:left;
+  font-size:16px;
+  color:#333;
+  line-height:19px;
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top:10px;
+}
+
+.scoll{
+  float:left;
+  margin-top:20px;
+}
+
+.ytv{
+  float:left;
+}
+
+
+
+
+
+
+
 

@@ -53,21 +53,18 @@
     <span>More Instructors to Learn From</span>
 
     <div class="slider">
-      <% @instructors = Instructor.all(:limit => 4)  %>
-      <% @instructors.each do |instructor|%>
-          <div class="box4">
-            <%= link_to "#{image_tag (instructor.photo.url), :width => '102px', :height => '142px' }".html_safe, instructor %>
-            <p><%= instructor.title.html_safe %></p>
-            <span><%= instructor.sub_title.html_safe %></span>
-          </div>
-      <% end %>
-
-
-      <div class="clear"></div>
-
-      <div class="arrows">
-        <a href="#"><img src="/assets/arrow1.png" width="33" height="57" alt="arrow1"></a>
-        <a href="#" class="right"><img src="/assets/arrow2.png" width="33" height="57" alt="arrow2"></a>
+      <div id="show-instructors" style="">
+        <% @instructors = Instructor.all(:order => "id DESC") %>
+        <div id="carousel-horizontal">
+          <ul id="carousel">
+            <% @instructors.each do |instructor| %>
+                <li><%= link_to (image_tag instructor.photo.url(:small), :id => "instructor#{instructor.id}", :style => "width: 130px; height: 170px").html_safe, instructor %>
+                  <p><%= instructor.title.html_safe %></p>
+                  <p id="subtitle"><%= instructor.sub_title.html_safe %></p>
+                </li>
+            <% end %>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -86,7 +83,19 @@
 <div class="clear"></div>
 
 <script type="text/javascript">
-  $('.more-main').jcarousel({
-      wrap: 'circular'
-  });
+    $(document).ready(function(){
+        $(".step").hover(function() {
+            $(this).find(".text").filter(':not(:animated)').animate({"top": "28px"}, "fast");
+        }, function() {
+            $(this).find(".text").animate({"top": "-130px"}, "fast");
+        });
+
+
+        $('#carousel').jcarousel({
+            wrap: 'circular'
+        });
+
+    });
+
+
 </script>
